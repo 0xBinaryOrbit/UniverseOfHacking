@@ -8,13 +8,13 @@ const Footer = () => {
   const footerLinks = {
     'Quick Links': [
       { name: 'Home', path: '/' },
-      { name: 'Learn', path: '/learn' },
+      // { name: 'Learn', path: '/learn' },
       { name: 'Tools', path: '/tools' },
       { name: 'Blogs', path: '/blogs' },
     ],
     'Resources': [
       { name: 'CTF Events', path: '/ctf' },
-      { name: 'Job Board', path: '/jobs' },
+      // { name: 'Job Board', path: '/jobs' },
       { name: 'News', path: '/news' },
       { name: 'Resources', path: '/resources' },
     ],

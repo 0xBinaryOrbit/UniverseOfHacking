@@ -2182,395 +2182,126 @@ Welcome to the Universe of Hacking! 🛡️
     "difficulty": null,
     "description": "RCTF 2025 postponed to October due to unfinished preparations including platform testing and challenge polishing. Organized by ROIS to ensure stable and fun competition experience."
   },
+  
+ 
   {
-    "id": "brunnerctf-2025",
-    "name": "BrunnerCTF 2025",
+    "id": "compfest-2025",
+    "name": "COMPFEST CTF 2025",
     "platform": "CTFtime",
-    "startDate": "2025-08-22T17:30:00Z",
-    "endDate": "2025-08-24T17:30:00Z",
-    "url": "https://ctf.brunnerne.dk/",
+    "startDate": "2025-10-04T02:00:00Z",
+    "endDate": "2025-10-05T02:00:00Z",
+    "url": "https://compfest.id/",
     "type": "Jeopardy",
     "participants": null,
-    "prize": "Gift cards, security subscriptions, T-shirts, mugs for top Danish teams",
-    "difficulty": "Beginner to Intermediate",
-    "description": "First BrunnerCTF featuring fresh challenges in Web, forensics, rev, crypto, pwn, OSINT with secret ingredients. Aimed at home cooks with experience, including 'Shake & Bake' category for beginners and chef's specials for experts. Sponsored by Campfire Security, CyberSkills, Bankdata, Hetzner."
-  },
-  {
-    "id": "hitcon-ctf-2025",
-    "name": "HITCON CTF 2025",
-    "platform": "CTFtime",
-    "startDate": "2025-08-22T19:30:00Z",
-    "endDate": "2025-08-24T19:30:00Z",
-    "url": "https://ctf2025.hitcon.org/",
-    "type": "Jeopardy",
-    "participants": null,
-    "prize": "1st: $5,000, 2nd: $2,500, 3rd: $1,000 USD",
-    "difficulty": "Advanced",
-    "description": "HITCON CTF 2025 organized by HITCON team. Details to be announced. High rating weight (100.00) indicates competitive nature for experienced CTF players."
-  },
-  {
-    "id": "sawah-ctf-2025",
-    "name": "Sawah Cyber Security CTF 2025",
-    "platform": "CTFtime",
-    "startDate": "2025-08-23T10:30:00Z",
-    "endDate": "2025-08-23T14:30:00Z",
-    "url": "https://ctf.sawahcyber.id/",
-    "type": "Jeopardy",
-    "participants": "Individual only",
-    "prize": "1st: 1,000,000 IDR, 2nd: 600,000 IDR, 3rd: 400,000 IDR",
-    "difficulty": "Beginner Friendly",
-    "description": "4-hour on-site CTF in Bali, Indonesia featuring Web Exploitation, Reverse Engineering, Binary Exploitation, OSINT, and AI challenges. Hosted by PT Sawah Cyber Security to promote cybersecurity awareness in Indonesia. Open to universities, companies, and independent participants."
-  },
-   {
-    "id": "pecan-plus-ctf-2025",
-    "name": "PECAN+ CTF 2025",
-    "platform": "CTFtime",
-    "startDate": "2025-08-24T06:30:00Z",
-    "endDate": "2025-08-24T10:30:00Z",
-    "url": "https://pecanplus.org/",
-    "type": "Jeopardy",
-    "format": "On-site",
-    "location": "Australia",
-    "participants": "High school students (yr 10-12)",
-    "prize": "Flipper Zeros, Raspberry Pis, lockpick kits, Arduino kits, micro:bit bundles",
-    "difficulty": "Beginner to Intermediate",
-    "description": "Australian CTF for high school students led by Edith Cowan University. Collaborative initiative with higher education institutions, cyber security industry, government, teachers and students to raise cyber security awareness, skills and aspirations."
-  },
-  {
-    "id": "tfc-ctf-2025",
-    "name": "TFC CTF 2025",
-    "platform": "CTFtime",
-    "startDate": "2025-08-29T15:30:00Z",
-    "endDate": "2025-08-31T15:30:00Z",
-    "url": "https://ctf.thefewchosen.com/",
-    "type": "Jeopardy", 
-    "format": "Online",
-    "location": "Remote",
-    "participants": null,
-    "prize": "Cash prizes, Burp Suite licenses, PEN-200 courses, HTB subscriptions",
-    "difficulty": "Beginner to Advanced",
-    "description": "Fifth annual CTF by The Few Chosen featuring challenges in Pwn, Reverse, Web, Crypto, and Misc. Designed for both cybersecurity novices and seasoned experts with meticulously engineered platform from scratch."
-  },
-  {
-    "id": "full-weak-engineer-ctf-2025",
-    "name": "Full Weak Engineer CTF 2025",
-    "platform": "CTFtime",
-    "startDate": "2025-08-29T15:30:00Z",
-    "endDate": "2025-08-31T15:30:00Z",
-    "url": "https://ctf.fwectf.com/",
-    "type": "Jeopardy",
-    "format": "Online",
-    "location": "Remote",
-    "participants": null,
-    "prize": "Not specified",
-    "difficulty": "Beginner to Advanced",
-    "description": "Jeopardy-style CTF organized by full weak engineer team featuring challenges in Web, Pwn, Reversing, Crypto, and Forensics/OSINT. Designed to be enjoyable for both beginners and experienced players."
-  },
-  {
-    "id": "blue-arena-2025",
-    "name": "Blue Arena",
-    "platform": "CSEM CTF",
-    "startDate": "2025-08-29T19:34:00Z",
-    "endDate": "2025-08-31T20:03:00Z",
-    "url": "https://csem.sturtles.in/events/2/",
-    "type": "Jeopardy",
-    "format": "Online",
-    "location": "Remote",
-    "participants": "Individual only",
-    "prize": "Digital certificates, Hall of Fame placement, NFT badges",
-    "difficulty": "Intermediate to Advanced",
-    "description": "Forensics-only CTF featuring memory analysis, file carving, log tracing, OSINT challenges. Focused on digital investigation and cyber forensics skills for cybersecurity students and experienced analysts."
-  },
-  {
-    "id": "nns-ctf-2025",
-    "name": "NNS CTF 2025",
-    "platform": "CTFtime",
-    "startDate": "2025-08-29T21:30:00Z",
-    "endDate": "2025-08-31T21:30:00Z",
-    "url": "https://nnsc.tf/",
-    "type": "Jeopardy",
-    "format": "Online",
-    "location": "Remote",
-    "participants": null,
-    "prize": "Cash prizes in EUR (open category) and NOK (Norwegian students)",
-    "difficulty": "Beginner to Expert",
-    "description": "First edition jeopardy-style CTF by Norske Nøkkelsnikere team featuring web, pwn, rev, crypto, blockchain, cloud, mobile, misc challenges. Open to beginners, students, intermediate players, and experts."
-  },
-  {
-    "id": "snakectf-quals-2025",
-    "name": "snakeCTF 2025 Quals",
-    "platform": "CTFtime",
-    "startDate": "2025-08-29T22:30:00Z",
-    "endDate": "2025-08-30T22:30:00Z",
-    "url": "https://snakectf.org/",
-    "type": "Jeopardy",
-    "format": "Online",
-    "location": "Remote",
-    "participants": null,
-    "prize": "Finals qualification (prizes TBD)",
+    "prize": "To be determined",
     "difficulty": null,
-    "description": "Online jeopardy-style CTF qualifier for on-site finals in Italy. Features pwn, web, reversing, crypto, forensics and network challenges. Top teams qualify for November/December 2025 finals."
+    "description": "A CTF event organized by Computer Science students of Universitas Indonesia. The main event is aimed for Indonesian citizens, but everyone is welcome to participate in the mirror contest. This is a mirror event of an already held local event."
   },
   {
-    "id": "corctf-2025",
-    "name": "corCTF 2025",
+    "id": "securinets-quals-2025",
+    "name": "Securinets CTF Quals 2025",
     "platform": "CTFtime",
-    "startDate": "2025-08-30T05:30:00Z",
-    "endDate": "2025-09-01T05:30:00Z",
-    "url": "https://ctf.cor.team/",
+    "startDate": "2025-10-04T13:00:00Z",
+    "endDate": "2025-10-05T21:00:00Z",
+    "url": "https://quals.securinets.tn/",
     "type": "Jeopardy",
-    "format": "Online",
-    "location": "Remote",
     "participants": null,
-    "prize": "Cash prizes, Binary Ninja licenses, RET2 Wargames tokens",
-    "difficulty": "Advanced",
-    "description": "CTF organized by Crusaders of Rust (Starrust Crusaders), American and European security research organization. High rating weight (82.00) indicates competitive nature for experienced teams."
-  },
-  {
-    "id": "nullcon-berlin-hackim-2025",
-    "name": "Nullcon Berlin HackIM 2025 CTF",
-    "platform": "CTFtime",
-    "startDate": "2025-09-04T16:00:00Z",
-    "endDate": "2025-09-05T18:30:00Z",
-    "url": "https://ctf.nullcon.net/",
-    "type": "Jeopardy",
-    "format": "Hybrid",
-    "location": "Berlin, Germany & Remote",
-    "participants": null,
-    "prize": "TBA (onsite and possibly online)",
-    "difficulty": "Intermediate to Advanced",
-    "description": "Conference CTF for Nullcon Berlin 2025 with both onsite and online participation. May include challenges only available onsite. Organized by ENOFLAG."
-  },
-  {
-    "id": "imaginaryctf-2025",
-    "name": "ImaginaryCTF 2025",
-    "platform": "CTFtime",
-    "startDate": "2025-09-06T00:30:00Z",
-    "endDate": "2025-09-08T00:30:00Z",
-    "url": "https://2025.imaginaryctf.org/",
-    "type": "Jeopardy",
-    "format": "Online",
-    "location": "Remote",
-    "participants": null,
-    "prize": "TBA",
-    "difficulty": "All skill levels",
-    "description": "Cybersecurity CTF with challenges in cryptography, binary exploitation, web exploitation, forensics, reversing for all skill levels. Organized by ImaginaryCTF team ([sqrt (-1) + 1])."
-  },
-  {
-    "id": "craccon-2025",
-    "name": "CRACCON 2025",
-    "platform": "Defhawk",
-    "startDate": "2025-09-06T13:30:00Z",
-    "endDate": "2025-09-07T13:30:00Z",
-    "url": "https://defhawk.com/battleground/raid/craccon-ctf-2025",
-    "type": "Jeopardy",
-    "format": "Online Qualifier",
-    "location": "Remote",
-    "participants": null,
-    "prize": "Prizes worth ₹4,00,000, CRTP training, TryHackMe Premium, mentorship",
+    "prize": "To be determined",
     "difficulty": null,
-    "description": "Preliminary round for CRACCON 2025 global participants. Qualifiers advance to offline finals on October 4th in Delhi. Features hacking challenges, workshops, and networking opportunities."
+    "description": "Online jeopardy style CTF organized by Securinets INSAT featuring categories: Web, Reverse Engineering, Pwn, Crypto, Forensics, OSINT, Misc, AI. Only 10 teams will qualify to the final CTF + top 5 from north africa."
   },
   {
-    "id": "asis-ctf-quals-2025",
-    "name": "ASIS CTF Quals 2025",
+    "id": "standoff-cyberbattle-16",
+    "name": "Standoff Cyberbattle 16",
     "platform": "CTFtime",
-    "startDate": "2025-09-06T19:30:00Z",
-    "endDate": "2025-09-07T19:30:00Z",
-    "url": "https://asisctf.com/",
-    "type": "Jeopardy",
-    "format": "Online",
-    "location": "Remote",
+    "startDate": "2025-10-06T06:00:00Z",
+    "endDate": "2025-10-08T15:00:00Z",
+    "url": "https://16.standoff365.com/en/",
+    "type": "Attack-Defense",
     "participants": null,
-    "prize": "Not specified",
-    "difficulty": "Advanced",
-    "description": "ASIS CTF Qualifiers 2025 with high rating weight (96.29), indicating highly competitive nature for top CTF teams worldwide."
+    "prize": "1st: $10,000, 2nd: $5,000, 3rd: $2,500",
+    "difficulty": null,
+    "description": "Large-scale cyber battle simulating real-world attacks and defenses on replicas of IT systems from various industries. Red and blue teams compete in hyper-realistic virtual city targeting sectors like banking, energy, and telecom. Open to international teams only."
   },
   {
-    "id": "blackhat-mea-ctf-2025",
-    "name": "BlackHat MEA CTF Qualification 2025",
-    "platform": "FlagYard",
-    "startDate": "2025-09-07T15:30:00Z",
-    "endDate": "2025-09-08T15:30:00Z",
-    "url": "https://blackhatmea.com/capture-the-flag",
-    "type": "Jeopardy",
-    "format": "Online Qualifier",
-    "location": "Remote",
-    "participants": "Teams (500+ participants)",
-    "prize": "700,000 SAR total prizes for onsite finals",
-    "difficulty": "Amateur, Intermediate, Expert tiers",
-    "description": "Black Hat MEA CTF qualification round. Features Web, Reverse Engineering, PWN, Crypto and Forensics challenges. Top 125 teams advance to onsite finals in Riyadh in December 2025."
-  },
-  {
-    "id": "watctf-f25",
-    "name": "WatCTF F25",
+    "id": "ecw-qualifiers-2025",
+    "name": "ECW Online Qualifiers",
     "platform": "CTFtime",
-    "startDate": "2025-09-10T00:30:00Z",
-    "endDate": "2025-09-12T00:30:00Z",
-    "url": "https://watctf.org/",
+    "startDate": "2025-10-08T12:00:00Z",
+    "endDate": "2025-10-22T14:00:00Z",
+    "url": "https://challenge-ecw.eu/",
     "type": "Jeopardy",
-    "format": "Online",
-    "location": "Remote",
+    "participants": "Individual",
+    "prize": "Qualification for onsite finals, possible monetary prizes",
+    "difficulty": null,
+    "description": "Online open-to-all CTF qualifier for the onsite CTF only open for European students. This is the 10th edition of the ECW, a European convention about cybersecurity and AI."
+  },
+  {
+    "id": "poc-ctf-qualification-2025",
+    "name": "POC CTF Qualification 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-10-12T10:00:00Z",
+    "endDate": "2025-10-13T10:00:00Z",
+    "url": "https://powerofcommunity.net/2025/ctf.html",
+    "type": "Jeopardy",
+    "participants": "Individual",
+    "prize": "Final prizes: 1st: $5,000, 2nd: $3,000, 3rd: $2,000",
+    "difficulty": null,
+    "description": "Individual competition where participants compete to solve challenges and earn points. Qualification round for final on-site competition during Power Of Community conference in Seoul, Korea."
+  },
+  {
+    "id": "enigmaxplore-3",
+    "name": "EnigmaXplore 3.0",
+    "platform": "CTFtime",
+    "startDate": "2025-10-10T12:30:00Z",
+    "endDate": "2025-10-11T00:30:00Z",
+    "url": "https://enigmaxplore.ctfd.io/",
+    "type": "Jeopardy",
+    "participants": "Teams of 1-3",
+    "prize": "40000 INR Pool",
+    "difficulty": null,
+    "description": "12-hour online Jeopardy-style cybersecurity competition with challenges from Reverse Engineering, Binary Exploitation, Forensics, Web Exploitation, cryptography etc. Hosted on CTFd platform."
+  },
+  {
+    "id": "hackfest-ctf-2025",
+    "name": "Hackfest CTF 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-10-16T19:30:00Z",
+    "endDate": "2025-10-17T19:30:00Z",
+    "url": "https://hfctf.ca/",
+    "type": "Jeopardy",
+    "participants": "On-site teams of 6",
+    "prize": "1st: $2,000, 2nd: $1,000, 3rd: $500",
+    "difficulty": null,
+    "description": "24-hour on-premises CTF at Centre des Congrès de Québec, Canada. Requires both Hackfest Ticket and HFCTF ticket. Teams of six participants competing non-stop."
+  },
+  {
+    "id": "hitcon-cyberrange-2025",
+    "name": "HITCON Cyber Range 2025 Final",
+    "platform": "CTFtime",
+    "startDate": "2025-10-17T01:00:00Z",
+    "endDate": "2025-10-17T10:00:00Z",
+    "url": "https://hitcon.kktix.cc/events/hitcon-cyberrange-2025",
+    "type": "Jeopardy",
+    "participants": "Corporate teams of 4",
+    "prize": "1st: $3,000, 2nd: $1,500, 3rd: $600",
+    "difficulty": null,
+    "description": "Taiwan's benchmark challenge for Blue Teams testing cybersecurity incident response processes. On-site finals for teams that passed online qualifiers. Focuses on realistic enterprise cybersecurity defense capabilities."
+  },
+  {
+    "id": "hacklu-ctf-2025",
+    "name": "Hack.lu CTF 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-10-17T18:00:00Z",
+    "endDate": "2025-10-19T18:00:00Z",
+    "url": "https://flu.xxx/",
+    "type": "Jeopardy",
     "participants": null,
-    "prize": "Not specified",
-    "difficulty": "Beginner to Medium",
-    "description": "University of Waterloo's Cybersecurity Club jeopardy-style CTF. Primarily aimed at beginner-to-medium level with some hard challenges for skilled players."
-  },
-  {
-    "id": "defcamp-dctf-2025-quals",
-    "name": "DefCamp Capture the Flag (D-CTF) 2025 Quals",
-    "platform": "CyberEDU",
-    "startDate": "2025-09-12T15:30:00Z",
-    "endDate": "2025-09-14T15:30:00Z",
-    "url": "https://dctf25-quals.cyber-edu.co/",
-    "type": "Jeopardy",
-    "format": "Online Qualifier",
-    "location": "Remote",
-    "participants": "Teams only",
-    "prize": "Cash prizes, Bucharest finals invitation, accommodation",
-    "difficulty": "Entry Level to Insane",
-    "description": "DefCamp CTF qualification phase for largest security CTF in Central and Eastern Europe. Features Crypto, Pwning, Reversing, Web, Forensics challenges. Top teams qualify for Attack-Defence finals in Bucharest."
-  },
-  {
-    "id": "null-ctf-2025",
-    "name": "Null CTF 2025",
-    "platform": "CTFtime",
-    "startDate": "2025-12-05T15:30:00Z",
-    "endDate": "2025-12-07T15:30:00Z",
-    "url": "https://ctf.r0devnull.team/",
-    "type": "Jeopardy",
-    "format": "Online",
-    "location": "Remote",
-    "participants": null,
-    "prize": "TBA",
-    "difficulty": "All skill levels",
-    "description": "First edition 48-hour Jeopardy-style CTF by team r0/dev/null. Features Web, Pwn, Crypto, Reverse Engineering, Misc, Forensics challenges. Aimed at all skill levels for fun, learning, and competition."
-  },
-  {
-    "id": "kubanctf-qualifier-2025",
-    "name": "KubanCTF Qualifier 2025",
-    "platform": "CTFtime",
-    "startDate": "2025-08-23T12:30:00Z",
-    "endDate": "2025-08-23T22:30:00Z",
-    "url": "https://kubanctf2025.ru/",
-    "type": "Jeopardy",
-    "participants": "Teams up to 5",
-    "prize": "1st: 600,000 rubles, 2nd: 400,000 rubles, 3rd: 300,000 rubles",
-    "difficulty": "Intermediate to Advanced",
-    "description": "Team competition with creative cybersecurity tasks. Top 10 teams advance to semifinals, top 5 to finals at Sirius federal territory. Finals feature Attack-Defense format with free accommodation, meals, and social events for finalists. Organized by Codeby Games."
-  },
-  {
-    "id": "lit-ctf-2025",
-    "name": "Lexington Informatics Tournament CTF 2025",
-    "platform": "CTFtime",
-    "startDate": "2025-08-23T20:30:00Z",
-    "endDate": "2025-08-25T20:30:00Z",
-    "url": "https://lit.lhsmathcs.org/",
-    "type": "Jeopardy",
-    "participants": "Teams up to 3",
-    "prize": "Cash prizes, WolframAlpha subscriptions, LIT shirts, calculators, and various sponsorships",
-    "difficulty": "Beginner Friendly",
-    "description": "Jeopardy-style online CTF hosted by LexMACS club from Lexington High School with guest writers. Features CTF Round, Standard Round, Writeups prizes, Game Night, and special categories for middle school and post-HS teams. Multiple sponsors including Google, Trail of Bits, Wolfram, and Texas Instruments."
-  },
-      {
-        id: "1",
-        name: "idekCTF 2025",
-        platform: "CTFtime",
-        startDate: "2025-08-02T00:00:00Z",
-        endDate: "2025-08-04T00:00:00Z",
-        url: "https://ctf.idek.team/",
-        type: "Jeopardy",
-        participants: null,
-        prize: "Infra sponsored by goo.gle/ctfsponsorship",
-        difficulty: null,
-        description:
-          "The fourth iteration of idekCTF! Prequalifier for MaltaCTF 2025 Finals.",
-      },
-      {
-        id: "2",
-        name: "justCTF 2025",
-        platform: "CTFtime",
-        startDate: "2025-08-02T06:00:00Z",
-        endDate: "2025-08-03T19:00:00Z",
-        url: "http://2025.justctf.team/",
-        type: "Jeopardy",
-        participants: null,
-        prize: "Cash prizes (details TBA)",
-        difficulty: null,
-        description:
-          "2025 justCTF jeopardy competition. Sponsors: Trail of Bits, OtterSec.",
-      },
-      {
-        id: "3",
-        name: "WHY2025 CTF",
-        platform: "CTFtime",
-        startDate: "2025-08-08T16:00:00Z",
-        endDate: "2025-08-11T16:00:00Z",
-        url: "https://ctf.why2025.org/",
-        type: "Jeopardy",
-        participants: null,
-        prize: null,
-        difficulty: null,
-        description:
-          "CTF at WHY2025 with both online and on-site challenges for all skill levels.",
-      },
-      {
-        id: "4",
-        name: "CSD CTF 2025",
-        platform: "CTFtime",
-        startDate: "2025-08-08T21:00:00Z",
-        endDate: "2025-08-10T21:00:00Z",
-        url: "https://cyberstudents.net/ctf",
-        type: "Jeopardy",
-        participants: null,
-        prize: "Minimum $200 prize pool",
-        difficulty: "Mixed",
-        description:
-          "Weekend-long CTF with high school and open brackets. Categories: web, pwn, rev, crypto, forensics, misc.",
-      },
-      {
-        id: "5",
-        name: "scriptCTF 2025",
-        platform: "CTFtime",
-        startDate: "2025-08-16T00:00:00Z",
-        endDate: "2025-08-18T00:00:00Z",
-        url: "https://ctf.scriptsorcerers.xyz/",
-        type: "Jeopardy",
-        participants: null,
-        prize: "$6000+ prize pool",
-        difficulty: "Beginner-friendly",
-        description:
-          "48-hour jeopardy CTF with mostly beginner friendly challenges. Team limit: 4 members.",
-      },
-      {
-        id: "6",
-        name: "SekaiCTF 2025",
-        platform: "CTFtime",
-        startDate: "2025-08-16T01:00:00Z",
-        endDate: "2025-08-18T01:00:00Z",
-        url: "https://ctf.sekai.team/",
-        type: "Jeopardy",
-        participants: null,
-        prize: "$15,000+ in prizes",
-        difficulty: "Intermediate-Advanced",
-        description:
-          "Fourth edition serving as prequalifier for MaltaCTF and XCTF Finals. Includes beginner-friendly tasks.",
-      },
-      {
-        id: "7",
-        name: "CTFZone 2025 Quals",
-        platform: "CTFtime",
-        startDate: "2025-08-16T10:00:00Z",
-        endDate: "2025-08-17T10:00:00Z",
-        url: "https://ctf.bi.zone/",
-        type: "Jeopardy",
-        participants: null,
-        prize: "Top 10 advance to finals ($18k prize pool)",
-        difficulty: null,
-        description:
-          "24-hour online qualifier. Categories: web, pwn, crypto, reverse, PPC. Top 10 proceed to Attack/Defense finals.",
-      },
-    ],
+    "prize": "To be determined",
+    "difficulty": null,
+    "description": "15th edition of Hack.lu CTF organized by FluxFingers, the CTF team of Ruhr-University Bochum (Germany)."
+  }
+  ],
   },
 
   // News data
@@ -3776,7 +3507,305 @@ Welcome to the Universe of Hacking! 🛡️
         "classActionFiled": true,
         "regulatoryActions": ["ICO investigation"]
       }
-    }
+    },
+    {
+    "id": "n1",
+    "headline": "South Korean Government Data Center Fire",
+    "summary": "Fire at National Information Resources Service data center in Daejeon disrupts hundreds of government services, caused by lithium-ion battery explosion during relocation.",
+    "fullContent": "A fire at a government data center in Daejeon, South Korea, has disrupted the availability of hundreds of online government services, including mobile identification systems, postal, and tax services. The blaze took nearly 24 hours to extinguish and was caused by a lithium-ion battery explosion during a procedure to shut off power ahead of relocating batteries. The batteries were being moved because they were installed on the same floor as servers, raising fire safety concerns.",
+    "impact": "Major disruption to government services affecting travelers, postal services, and tax systems across South Korea.",
+    "category": "Infrastructure",
+    "subcategory": "Data Center",
+    "date": "2025-09-26",
+    "severity": "High",
+    "source": "Multiple",
+    "authors": ["Korea Herald", "CNN"],
+    "tags": ["data-center", "fire", "south-korea", "infrastructure", "battery-safety"],
+    "references": [
+      {
+        "title": "Korea Herald: Battery blaze at state data center",
+        "url": "https://www.koreaherald.com"
+      },
+      {
+        "title": "CNN: Explosive battery blaze in South Korea",
+        "url": "https://www.cnn.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Thermal runaway is a concern with newer battery systems. Ensure emergency power off is connected with UPS systems and maintain redundancy in multiple physical locations."
+      },
+      {
+        "author": "Murray",
+        "comment": "Modern distributed processing and cheap digital storage make it possible to efficiently mitigate such risk, unlike historical fires like the 1973 National Personnel Records Center fire."
+      }
+    ]
+  },
+  {
+    "id": "n2",
+    "headline": "GTIG Finds US Organizations Compromised for Over a Year",
+    "summary": "Google Threat Intelligence Group discovers backdoor campaign with 393-day average dwell time targeting US legal, SaaS, and technology providers via vulnerable network appliances.",
+    "fullContent": "Google Threat Intelligence Group has observed a backdoor malware campaign where threat actors tracked as UNC5221 maintained long-term access to US organizations' systems by exploiting vulnerable network appliances that don't support EDR tools. The intrusions targeted legal services, SaaS providers, BPOs, and technology providers, with average undetected access of 393 days. The BRICKSTORM backdoor uses unique C2 domains per victim and attackers accessed emails of developers and administrators by abusing Microsoft Entra ID applications with elevated permissions.",
+    "impact": "Long-term espionage campaign compromising sensitive US organizations and their supply chains.",
+    "category": "Threat Intelligence",
+    "subcategory": "APT",
+    "date": "2025-09-24",
+    "severity": "Critical",
+    "source": "Google Threat Intelligence",
+    "authors": ["GTIG"],
+    "tags": ["apt", "backdoor", "china-nexus", "espionage", "brickstorm"],
+    "references": [
+      {
+        "title": "Google Cloud Blog: Another BRICKSTORM",
+        "url": "https://cloud.google.com"
+      },
+      {
+        "title": "Dark Reading Coverage",
+        "url": "https://www.darkreading.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Frost",
+        "comment": "Not surprising; devices that don't support decent telemetry are being exploited. Employ Zero Trust in these environments."
+      },
+      {
+        "author": "Neely",
+        "comment": "Consider storing logs offline for 18+ months and review NIST SP 800-92 and M-21-31 for logging improvements."
+      }
+    ]
+  },
+  {
+    "id": "n3",
+    "headline": "UK Gov't Backs £1.5 Billion Loan to Support JLR Recovery",
+    "summary": "UK government guarantees £1.5 billion commercial loan to Jaguar Land Rover following debilitating cyberattack that shut down production since August 31.",
+    "fullContent": "The UK Government will guarantee a £1.5 billion commercial bank loan to Jaguar Land Rover through the Export Development Guarantee to support its supply chain while production remains shut down due to a cyberattack. The government assumes up to 80% of the loan's risk, with JLR having five years to repay. JLR's UK plants employ 30,000 people with 120,000 additional jobs in the supply chain. The attack began August 31 and represents the first time a company has received government help specifically due to a cyberattack.",
+    "impact": "Major automotive manufacturer shutdown affecting 150,000 jobs, requiring unprecedented government financial intervention.",
+    "category": "Industry",
+    "subcategory": "Automotive",
+    "date": "2025-09-28",
+    "severity": "High",
+    "source": "UK Government",
+    "authors": ["BBC", "The Guardian"],
+    "tags": ["ransomware", "automotive", "uk", "supply-chain", "business-impact"],
+    "references": [
+      {
+        "title": "UK Government Announcement",
+        "url": "https://www.gov.uk"
+      },
+      {
+        "title": "BBC Coverage",
+        "url": "https://www.bbc.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Attack costing JLR $67-94 million USD daily. This sets a significant precedent for government support following cyber incidents."
+      },
+      {
+        "author": "Pescatore",
+        "comment": "Similar to financial crisis bailouts, this should be followed by tightened regulatory oversight and security requirements."
+      }
+    ]
+  },
+  {
+    "id": "n4",
+    "headline": "Critical Fortra GoAnywhere MFT Flaw Under Active Exploit",
+    "summary": "Critical CVSS 10.0 vulnerability in Fortra GoAnywhere MFT being actively exploited since at least September 10, before patch release.",
+    "fullContent": "Fortra disclosed a critical deserialization vulnerability in GoAnywhere Managed File Transfer software on September 18 with patch released same day. Researchers observed active exploitation since September 10. The vulnerability involves a chain of three issues including an access control bypass, CVE-2025-10035 deserialization flaw, and an unknown issue regarding private key knowledge. CISA added it to Known Exploited Vulnerabilities catalog with October 20 mitigation deadline.",
+    "impact": "Critical file transfer systems vulnerable to remote exploitation with evidence of zero-day attacks.",
+    "category": "Vulnerabilities",
+    "subcategory": "Software",
+    "date": "2025-09-26",
+    "severity": "Critical",
+    "source": "Fortra",
+    "authors": ["watchTowr Labs", "Rapid7"],
+    "tags": ["cve-2025-10035", "fortra", "mft", "zero-day", "cisa-kev"],
+    "references": [
+      {
+        "title": "Fortra Security Advisory",
+        "url": "https://www.fortra.com"
+      },
+      {
+        "title": "watchTowr Labs Analysis",
+        "url": "https://labs.watchtowr.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Apply patch immediately and ensure Admin console is not internet-accessible. CVSS 10.0 vulnerability requires urgent attention."
+      }
+    ]
+  },
+  {
+    "id": "n5",
+    "headline": "Neon Call-Recording App Taken Down After Security Flaw",
+    "summary": "Neon call-recording app suspended after security flaw exposed all users' phone numbers, call recordings, and transcripts to other logged-in users.",
+    "fullContent": "The Neon call-recording app has been taken down following reports that logged-in users could access any other user's phone numbers, call recordings, and transcripts. Neon pays users to record calls and sells data to AI companies for training. The app records only calls placed within the app and only one side of conversations. Several US states require all-party consent for call recording. The founder took down servers but hasn't disclosed the security issue publicly.",
+    "impact": "Massive privacy breach exposing sensitive call recordings and personal information of all users.",
+    "category": "Privacy",
+    "subcategory": "Mobile Apps",
+    "date": "2025-09-25",
+    "severity": "High",
+    "source": "TechCrunch",
+    "authors": ["TechCrunch"],
+    "tags": ["privacy", "mobile-app", "data-breach", "call-recording"],
+    "references": [
+      {
+        "title": "TechCrunch Investigation",
+        "url": "https://techcrunch.com"
+      },
+      {
+        "title": "ZDNet Coverage",
+        "url": "https://www.zdnet.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Ullrich",
+        "comment": "The concept of paying users to eavesdrop to train AI seems wrong and potentially illegal in some jurisdictions."
+      },
+      {
+        "author": "Neely",
+        "comment": "Access controls continue to challenge service providers. Always disclose recording explicitly and provide opt-out options."
+      }
+    ]
+  },
+  {
+    "id": "n6",
+    "headline": "CISA and International Partners Release OT Security Guidance",
+    "summary": "Multi-national guidance published for securing operational technology systems with principles-based approach to OT architecture documentation.",
+    "fullContent": "CISA and partner agencies from six countries published 'Creating and Maintaining a Definitive View of Your Operational Technology Architecture.' The guidance provides five principles: define processes for maintaining definitive records; establish OT information security program; identify and categorize assets; document connectivity; and understand third-party risks. Partners include UK NCSC, Australian ACSC, Canadian Cyber Centre, FBI, New Zealand NCSC, Netherlands NCSC, and Germany BSI.",
+    "impact": "Comprehensive international guidance for OT security helping organizations manage critical infrastructure risks.",
+    "category": "Guidance",
+    "subcategory": "OT Security",
+    "date": "2025-09-29",
+    "severity": "Medium",
+    "source": "CISA",
+    "authors": ["CISA", "NCSC-UK"],
+    "tags": ["ot-security", "ics", "critical-infrastructure", "international"],
+    "references": [
+      {
+        "title": "NCSC UK Guidance",
+        "url": "https://www.ncsc.gov.uk"
+      },
+      {
+        "title": "CISA Foundations for OT Cybersecurity",
+        "url": "https://www.cisa.gov"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Engage OT system owners to document environments without disrupting operations. Establish dedicated points of contact for OT systems."
+      }
+    ]
+  },
+  {
+    "id": "n7",
+    "headline": "New XCSSET Variant Observed by Microsoft",
+    "summary": "Microsoft observes new XCSSET macOS malware variant with enhanced persistence and cryptocurrency wallet hijacking capabilities.",
+    "fullContent": "Microsoft Threat Intelligence observed limited attacks involving a new XCSSET variant targeting macOS through infected Xcode projects. The malware monitors clipboards for cryptocurrency wallet addresses and replaces them with attacker-controlled addresses. New components target Firefox for information theft and use run-only AppleScripts with LaunchDaemon persistence. Microsoft shared findings with Apple and collaborated with GitHub to take down affected repositories.",
+    "impact": "Enhanced macOS malware targeting developers and cryptocurrency users with improved evasion techniques.",
+    "category": "Malware",
+    "subcategory": "macOS",
+    "date": "2025-09-25",
+    "severity": "Medium",
+    "source": "Microsoft",
+    "authors": ["Microsoft Threat Intelligence"],
+    "tags": ["macos", "malware", "xcsset", "cryptocurrency", "xcode"],
+    "references": [
+      {
+        "title": "Microsoft Analysis",
+        "url": "https://www.microsoft.com"
+      },
+      {
+        "title": "The Hacker News Coverage",
+        "url": "https://thehackernews.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Run latest macOS and Xcode, use EDR, verify Xcode project integrity. Enable threat detection in browsers."
+      },
+      {
+        "author": "Frost",
+        "comment": "macOS lacks good telemetry options compared to Windows. We need better EDR capabilities for Unix systems."
+      }
+    ]
+  },
+  {
+    "id": "n8",
+    "headline": "Dutch Teens Arrested for Alleged Cyberespionage",
+    "summary": "Two Dutch teenagers arrested for suspected espionage on behalf of Russia, allegedly recruited via Telegram to conduct Wi-Fi sniffing operations.",
+    "fullContent": "Dutch authorities arrested two teenagers suspected of espionage for Russia. The individuals were recruited via Telegram by a hacker with Russian ties. One teenager allegedly conducted Wi-Fi sniffing operations near Europol, Eurojust, and the Canadian embassy. The suspects appeared before a magistrate on September 25, with one in police custody and the other under house arrest.",
+    "impact": "Local recruitment for foreign intelligence operations targeting European security institutions.",
+    "category": "Espionage",
+    "subcategory": "Nation-State",
+    "date": "2025-09-27",
+    "severity": "High",
+    "source": "Dutch Authorities",
+    "authors": ["NL Times", "Recorded Future"],
+    "tags": ["espionage", "russia", "wi-fi-sniffing", "telegram", "europol"],
+    "references": [
+      {
+        "title": "NL Times Report",
+        "url": "https://nltimes.nl"
+      },
+      {
+        "title": "Recorded Future Coverage",
+        "url": "https://therecord.media"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Recruiting locals for espionage is traditional tradecraft. Understand legal ramifications when using network monitoring tools."
+      },
+      {
+        "author": "Ullrich",
+        "comment": "This 'person behind the curtain' scenario dates back to Operation SOLAR SUNRISE in the 90s."
+      }
+    ]
+  },
+  {
+    "id": "n9",
+    "headline": "Asahi Suspends Japanese Operations in Response to Cyberattack",
+    "summary": "Japan's largest brewer suspends order, shipment, and customer service operations following cyberattack affecting group companies in Japan.",
+    "fullContent": "Asahi Group Holdings disclosed a system failure caused by a cyberattack affecting operations in Japan. The company suspended order and shipment operations at group companies in Japan, along with call center and customer service operations. Asahi has 30,000 employees globally and owns beer brands in Europe, Oceania, and Southeast Asia. No ransomware group has claimed responsibility for the attack.",
+    "impact": "Major disruption to Japan's largest brewer affecting supply chain and customer service operations.",
+    "category": "Industry",
+    "subcategory": "Manufacturing",
+    "date": "2025-09-29",
+    "severity": "High",
+    "source": "Asahi Group",
+    "authors": ["Asahi Group"],
+    "tags": ["brewing", "japan", "ransomware", "supply-chain"],
+    "references": [
+      {
+        "title": "Asahi Group Notice",
+        "url": "https://www.asahigroup-holdings.com"
+      },
+      {
+        "title": "BleepingComputer Coverage",
+        "url": "https://www.bleepingcomputer.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "No ransomware group claiming credit yet. Having alternate contact information ready helps maintain customer relationships during outages."
+      },
+      {
+        "author": "Dukes",
+        "comment": "Likely another ransomware incident. Hope they don't require government bailout like JLR."
+      }
+    ]
+  }
 ],
 
   events: [
@@ -5999,11 +6028,10 @@ Welcome to the Universe of Hacking! 🛡️
     {
       id: 1,
       name: "Faisalkhan (0xBinaryOrbit)",
-      role: "Founder, Universe of Hacking ",
-      bio: "Cybersecurity master's student at LJ University, enthusiastic Web3 security and offensive security learner. Building skills in smart contract auditing, blockchain fundamentals, and CTF challenges, with a passion for sharing knowledge through Universe of Hacking.",
+      role: "Founder",
+      bio: "Cybersecurity master’s student at Gujarat University focused on web and application security. Building skills in offensive security and CTFs, aiming to move into red teaming. Lifelong learner with a passion for sharing knowledge through Universe of Hacking.",
       image: "", // No photo yet, placeholder omitted
       skills: [
-        "Web3 Security",
         
         "Web Exploitation",
         "CTF Challenges",
@@ -6021,8 +6049,8 @@ Welcome to the Universe of Hacking! 🛡️
     {
       id: 2,
       name: "Bhavesh",
-      role: "Co-Founder & Technical Lead",
-      bio: "Cybersecurity master's student at GU(Gujarat University), Ethical hacking enthusiast with a strong grip on backend systems using MERN stack. Experienced in building secure, scalable web apps and exploring cybersecurity practices to build resilient systems.",
+      role: "Co-Founder ",
+      bio: "Cybersecurity master’s student at Gujarat University, passionate about ethical hacking and offensive security. Skilled in  web and application security. Focused on strengthening systems against modern threats and continuously advancing in red teaming and security research.",
       image: "", // No photo yet, placeholder omitted
       skills: [
         "Wapt",
@@ -6030,6 +6058,7 @@ Welcome to the Universe of Hacking! 🛡️
         "cryptography",
         "kali Linux",
         "bash",
+        "Web Exploitation",
         "malware analysis",
       ],
       social: {
@@ -6038,6 +6067,25 @@ Welcome to the Universe of Hacking! 🛡️
         github: "https://github.com/bhaveshparmar07",
       },
     },
+   {
+  id: 3,
+  name: "Abdeali",
+  role: "Technical Lead & Developer",
+  bio: "MCA student at Gujarat University. Computer Applications graduate with 9+ CGPA, passionate about full stack development and exploring new technologies. Skilled in MERN Stack and Next.js, with a focus on building secure, scalable, and user-friendly web applications.",
+  image: "", // No photo yet, placeholder omitted
+  skills: [
+    "JavaScript",
+
+    "MERN Stack",
+    "Web Development",
+    "Problem Solving"
+  ],
+  social: {
+    linkedin: "https://www.linkedin.com/in/abdeali-dahodwala-169083268/",
+    github: "https://github.com/Abdeali1310"
+  }
+}
+
   ],
 
 

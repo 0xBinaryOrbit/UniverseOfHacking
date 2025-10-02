@@ -141,60 +141,141 @@ const Home = () => {
     
         {/* Founders Section */}
 <section className="py-20">
-  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} className="text-center mb-16">
-    <h2 className="text-4xl font-bold text-white mb-4">Meet the Brain Behind the Terminal</h2>
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    className="text-center mb-16"
+  >
+    <h2 className="text-4xl font-bold text-white mb-4">
+      Meet the Brain Behind the Terminal
+    </h2>
     <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-      Built by a self-taught hacker who believes cybersecurity should be open, real, and for everyone. Welcome to the Universe of Hacking.
+      Built by a self-taught hacker who believes cybersecurity should be open,
+      real, and for everyone. Welcome to the Universe of Hacking.
     </p>
   </motion.div>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-    {globalData.founders.map((founder, index) => (
-      <motion.div
-        key={founder.id}
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: index * 0.2 }}
-        className="card text-center group hover:scale-105 transition-all duration-300"
-      >
-      
-        <h3 className="text-2xl font-bold text-white mb-2">{founder.name}</h3>
-        <p className="text-primary-400 font-medium mb-4">{founder.role}</p>
-        <p className="text-gray-400 mb-6 leading-relaxed">{founder.bio}</p>
+  {/* First founder (centered on top) */}
+  {globalData.founders.length > 0 && (
+    <motion.div
+      key={globalData.founders[0].id}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2 }}
+      className="card text-center group hover:scale-105 transition-all duration-300 max-w-xl mx-auto mb-16"
+    >
+      <h3 className="text-2xl font-bold text-white mb-2">
+        {globalData.founders[0].name}
+      </h3>
+      <p className="text-primary-400 font-medium mb-4">
+        {globalData.founders[0].role}
+      </p>
+      <p className="text-gray-400 mb-6 leading-relaxed">
+        {globalData.founders[0].bio}
+      </p>
+{/* 
+      <div className="flex flex-wrap justify-center gap-2 mb-6">
+        {globalData.founders[0].skills.map((skill) => (
+          <span
+            key={skill}
+            className="px-3 py-1 bg-primary-500/20 text-primary-300 rounded-full text-sm"
+          >
+            {skill}
+          </span>
+        ))}
+      </div> */}
 
-        <div className="flex flex-wrap justify-center gap-2 mb-6">
-          {founder.skills.map((skill) => (
-            <span key={skill} className="px-3 py-1 bg-primary-500/20 text-primary-300 rounded-full text-sm">
-              {skill}
-            </span>
-          ))}
-        </div>
-
-        <div className="flex justify-center space-x-4">
+      <div className="flex justify-center space-x-4">
+        {globalData.founders[0].social.twitter && (
           <a
-            href={founder.social.twitter}
+            href={globalData.founders[0].social.twitter}
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 bg-gray-800 hover:bg-blue-600 rounded-full transition-colors"
           >
             <Twitter className="h-5 w-5 text-white" />
           </a>
+        )}
+        {globalData.founders[0].social.linkedin && (
           <a
-            href={founder.social.linkedin}
+            href={globalData.founders[0].social.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 bg-gray-800 hover:bg-blue-700 rounded-full transition-colors"
           >
             <Linkedin className="h-5 w-5 text-white" />
           </a>
+        )}
+        {globalData.founders[0].social.github && (
           <a
-            href={founder.social.github}
+            href={globalData.founders[0].social.github}
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 bg-gray-800 hover:bg-gray-600 rounded-full transition-colors"
           >
             <Github className="h-5 w-5 text-white" />
           </a>
+        )}
+      </div>
+    </motion.div>
+  )}
+
+  {/* Remaining founders in a 2-column grid */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+    {globalData.founders.slice(1).map((founder, index) => (
+      <motion.div
+        key={founder.id}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: (index + 1) * 0.2 }}
+        className="card text-center group hover:scale-105 transition-all duration-300"
+      >
+        <h3 className="text-2xl font-bold text-white mb-2">{founder.name}</h3>
+        <p className="text-primary-400 font-medium mb-4">{founder.role}</p>
+        <p className="text-gray-400 mb-6 leading-relaxed">{founder.bio}</p>
+
+        {/* <div className="flex flex-wrap justify-center gap-2 mb-6">
+          {founder.skills.map((skill) => (
+            <span
+              key={skill}
+              className="px-3 py-1 bg-primary-500/20 text-primary-300 rounded-full text-sm"
+            >
+              {skill}
+            </span>
+          ))}
+        </div> */}
+
+        <div className="flex justify-center space-x-4">
+          {founder.social.twitter && (
+            <a
+              href={founder.social.twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-gray-800 hover:bg-blue-600 rounded-full transition-colors"
+            >
+              <Twitter className="h-5 w-5 text-white" />
+            </a>
+          )}
+          {founder.social.linkedin && (
+            <a
+              href={founder.social.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-gray-800 hover:bg-blue-700 rounded-full transition-colors"
+            >
+              <Linkedin className="h-5 w-5 text-white" />
+            </a>
+          )}
+          {founder.social.github && (
+            <a
+              href={founder.social.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-gray-800 hover:bg-gray-600 rounded-full transition-colors"
+            >
+              <Github className="h-5 w-5 text-white" />
+            </a>
+          )}
         </div>
       </motion.div>
     ))}

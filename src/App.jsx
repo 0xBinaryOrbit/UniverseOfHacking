@@ -26,14 +26,14 @@ function App() {
           <Route path="tools" element={<Tools />} />
           <Route path="resources" element={<Resources />} />
           <Route path="resources/category/:categoryName" element={<ResourcesByCategory />} />
-          <Route path="learn" element={<Learn />} />
+          {/* <Route path="learn" element={<Learn />} />
           <Route path="learn/:pathId" element={<LearningPath />} />
           <Route path="learn/:pathId/:topicId" element={<LearningTopic />} />
-          <Route path="learn/:pathId/:topicId/:lessonId" element={<LearningTopic />} />
+          <Route path="learn/:pathId/:topicId/:lessonId" element={<LearningTopic />} /> */}
           <Route path="ctf" element={<CTF />} />
           <Route path="news" element={<News />} />
-          <Route path="jobs" element={<Jobs />} />
-          <Route path="events" element={<Events />} />
+          {/* <Route path="jobs" element={<Jobs />} />
+          <Route path="events" element={<Events />} /> */}
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

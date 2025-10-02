@@ -18,14 +18,14 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Learn', path: '/learn' },
+    // { name: 'Learn', path: '/learn' },
     { name: 'Tools', path: '/tools' },
     { name: 'Blogs', path: '/blogs' },
     { name: 'CTF', path: '/ctf' },
     { name: 'Resources', path: '/resources' },
-    { name: 'Jobs', path: '/jobs' },
+    // { name: 'Jobs', path: '/jobs' },
      { name: 'News', path: '/news' },
-     { name: "Events", path: "/events" },
+    //  { name: "Events", path: "/events" },
   ];
 
   return (
