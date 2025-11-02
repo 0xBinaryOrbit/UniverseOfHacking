@@ -225,7 +225,7 @@ const CTF = () => {
                 {event.name || "Unnamed Event"}
               </h3>
               <div className="flex items-center gap-2 mt-1">
-                <span className="text-xs text-gray-400">{event.platform || "Unknown platform"}</span>
+                
                 <span className="text-gray-600">•</span>
                 <span className="text-xs text-gray-400">{event.type || "Unknown type"}</span>
               </div>
@@ -239,8 +239,7 @@ const CTF = () => {
               )}
               
               <div className="flex items-center gap-1 text-xs text-gray-400">
-                {getEventTypeIcon(event.format, event.location)}
-                <span>{getEventTypeText(event.format, event.location)}</span>
+              
               </div>
             </div>
           </div>

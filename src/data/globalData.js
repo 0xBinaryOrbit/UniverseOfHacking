@@ -151,7 +151,7 @@ Advanced web application penetration testing requires a deep understanding of bo
 Remember: The goal isn't just to find vulnerabilities, but to help organizations improve their overall security posture. Every test should provide actionable insights that make the digital world a safer place.
 
 **Happy hacking, and stay ethical! 🛡️**`,
-      author: "0xBinaryOrbit",
+      author: "Faisalkhan(0xBinaryOrbit)",
       createdAt: "2025-01-15",
       updatedAt: "2025-01-15",
       tags: [
@@ -168,7 +168,7 @@ Remember: The goal isn't just to find vulnerabilities, but to help organizations
       difficulty: "Advanced",
       likes: 342,
       views: 2150,
-      featured: true,
+      featured: false,
     },
     {
   "id": "2",
@@ -340,7 +340,7 @@ For official documentation and community support, visit:
 - [https://forums.kali.org/](https://forums.kali.org/)
 
 **Happy ethical hacking!** 🚀`,
-  "author": "0xBinaryOrbit",
+  "author": "Faisalkhan(0xBinaryOrbit)",
   "createdAt": "2025-08-8",
   "updatedAt": "2025-08-8",
   "tags": [
@@ -356,10 +356,9 @@ For official documentation and community support, visit:
   "difficulty": "Intermediate",
   "likes": 287,
   "views": 1950,
-  "featured": true
-},
-      
-      {
+  "featured": false
+    }, 
+     {
       id: "3",
       title: "Kickstarting Your Journey in Ethical Hacking",
       slug: "kickstart-your-ethical-hacking-journey",
@@ -623,7 +622,7 @@ Welcome to the Universe of Hacking! 🛡️
 **Ready to dive deeper?** Check out our other tutorials on specific topics, join our weekly CTF challenges, and connect with our community of ethical hackers. Remember, we're here to support you every step of the way.
 
 *Join us. Learn. Hack. Repeat.*`,
-      author: "0xBinaryOrbit",
+      author: "Faisalkhan(0xBinaryOrbit)",
       createdAt: "2025-01-23",
       updatedAt: "2025-01-23",
       tags: ["Getting Started", "Ethical Hacking", "CTF", "Beginner", "Career"],
@@ -634,8 +633,32 @@ Welcome to the Universe of Hacking! 🛡️
       difficulty: "Beginner",
       likes: 189,
       views: 1420,
-      featured: true,
+      featured: false,
     },
+    {
+  "id": "4",
+  "title": "🧠 Things I Do After Installing Kali Linux 2025.3 (Bug Bounty Edition)",
+  "slug": "kali-linux-setup-bug-bounty",
+  "excerpt": "A complete guide to setting up a clean, optimized, and high-performance Kali Linux environment for bug bounty hunters — from recon to exploitation to report writing.",
+  "content": "# 🧠 Things I Do After Installing Kali Linux 2025.3 (Bug Bounty Edition)\n\n*By Universe of Hacking*\n\nThis guide sets up a clean, optimized, and high-performance environment for bug bounty hunters — from recon to exploitation to report writing.\nUpdated for Kali Linux 2025.3, compatible with both native and VM installs.\n\n## ⚙️ 1. Update Everything\n\nAlways start fresh with updates:\n\n```bash\nsudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y\n```\n\n## 📂 2. Directory Structure\n\nI like keeping recon data, wordlists, scripts, and screenshots neatly sorted:\n\n```bash\nmkdir -p ~/BugBounty/{Recon,Reports,Screenshots,Exploits,Scripts,Tools,Wordlists,Notes,Temp}\n```\n\nNow everything stays clean and organized.\n\n## ⚡ 3. Useful Aliases\n\nEdit your `~/.zshrc` or `~/.bashrc` and add:\n\n```bash\nalias recon=\"cd ~/BugBounty/Recon\"\n alias report=\"cd ~/BugBounty/Reports\"\n alias scripts=\"cd ~/BugBounty/Scripts\"\n alias tools=\"cd ~/BugBounty/Tools\"\n alias notes=\"cd ~/BugBounty/Notes\"\n alias exploits=\"cd ~/BugBounty/Exploits\"\n alias bb=\"cd ~/BugBounty\"\n alias updatekali=\"sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y\"\n alias ip=\"ip a | grep inet\"\n alias myip=\"curl ifconfig.me\"\n alias ports=\"sudo netstat -tulnp\"\n alias cls='clear && echo \"⚔️ Hunt Smart, Stay Sharp — $(whoami)\"' \n alias serve=\"python3 -m http.server 8080\"\n alias extract='tar -xvf'\n alias lss='ls -lah --color=auto'\n alias burp=\"java -jar ~/Tools/BurpSuite/burpsuite.jar\"\n```\n\nReload shell:\n\n```bash\nsource ~/.zshrc\n```\n\n## 🤖 4. ZSH + Plugins Setup\n\nMake your terminal powerful and pretty:\n\n```bash\nsudo apt install -y zsh zsh-autosuggestions zsh-syntax-highlighting\n chsh -s $(which zsh)\n```\n\nAdd to your `~/.zshrc`:\n\n```bash\nsource /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh\n source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh\n ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#888'\n```\n\n## 🔥 5. Firewall Basics (UFW)\n\n```bash\nsudo apt install ufw -y\n sudo ufw default deny incoming\n sudo ufw default allow outgoing\n sudo ufw allow ssh\n sudo ufw enable\n sudo ufw status verbose\n```\n\n## 🧰 6. Essential Bug Bounty Tools\n\nLet’s install all the necessary base tools for recon and exploitation:\n\n```bash\nsudo apt install -y \\\n  nmap masscan amass sublist3r subfinder assetfinder \\\n  httprobe httpx ffuf feroxbuster dirb dirsearch \\\n  wfuzz gobuster whatweb wafw00f nuclei \\\n  sqlmap xsser nikto \\\n  jq jq nodejs npm dnsutils whois \\\n  git python3-pip python3-requests \\\n  tmux htop tree curl wget unzip bat neovim\n```\n\n## 🧠 7. Python & Go Tooling\n\n### Python packages\n\n```bash\npip install requests beautifulsoup4 lxml colorama tldextract termcolor dnspython\n```\n\n### Go setup\n\nIf Go isn’t installed:\n\n```bash\nsudo apt install golang -y\n```\n\nThen set the PATH and install key Go tools:\n\n```bash\nexport PATH=$PATH:$HOME/go/bin\n echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.zshrc\n\n go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest\n go install github.com/projectdiscovery/httpx/cmd/httpx@latest\n go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest\n go install github.com/projectdiscovery/katana/cmd/katana@latest\n go install github.com/tomnomnom/assetfinder@latest\n go install github.com/tomnomnom/httprobe@latest\n go install github.com/lc/gau/v2/cmd/gau@latest\n go install github.com/ffuf/ffuf@latest\n```\n\n## 🧩 8. Wordlists\n\n```bash\nsudo apt install seclists -y\n sudo gunzip /usr/share/wordlists/rockyou.txt.gz\n ln -s /usr/share/wordlists ~/BugBounty/Wordlists\n```\n\nAlso add:\n\n```bash\ncd ~/BugBounty/Wordlists\n git clone https://github.com/danielmiessler/SecLists.git\n git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git\n```\n\n## 🧪 9. GitHub Recon Tools\n\n```bash\ncd ~/BugBounty/Tools\n\ngit clone https://github.com/nahamsec/HostHunter.git\ngit clone https://github.com/maurosoria/dirsearch.git\ngit clone https://github.com/s0md3v/XSStrike.git\ngit clone https://github.com/aboul3la/Sublist3r.git\ngit clone https://github.com/sullo/nikto.git\ngit clone https://github.com/blechschmidt/massdns.git\ngit clone https://github.com/guelfoweb/knock.git\ngit clone https://github.com/devanshbatham/ParamSpider.git\ngit clone https://github.com/projectdiscovery/dnsx.git\ngit clone https://github.com/defparam/smuggler.git\n```\n\n## 💻 10. Browsers & Extensions\n\nInstall:\n\n```bash\nsudo apt install -y chromium firefox-esr\n```\n\nExtensions I add (for both Chrome/Firefox):\n\n- **HackTools**\n- **Wappalyzer**\n- **Cookie Editor**\n- **User-Agent Switcher**\n- **Dark Reader**\n- **Burp Suite CA certificate**\n\n## 🧰 11. Burp Suite Setup\n\nBurp Suite is your core web proxy.\nAdd Chromium proxy settings:\n\n- **Proxy**: 127.0.0.1:8080\n- **Burp CA**: Import under “Authorities”.\n\n## 🎨 12. Customization & Usability\n\n```bash\nsudo apt install kali-themes kali-wallpapers-all flameshot gnome-tweaks fonts-hack-ttf\n```\n\n- Use Hack Nerd Font in terminal.\n- Enable Flameshot for clean bug report screenshots.\n- Create custom wallpapers with your handle/logo — professionalism matters for reports.\n\n## 📑 13. Reporting Stack\n\nBug bounty reports look cleaner with these:\n\n```bash\nsudo apt install -y libreoffice code obsidian typora\n```\n\n- **Obsidian** → For notes & recon mapping.\n- **Typora** → For Markdown-based report writing.\n- **Flameshot** → Screenshot management.\n- **LibreOffice Draw** → Annotate diagrams & findings.\n\n## 🛰️ 14. VPN & Privacy Setup\n\n```bash\nsudo apt install -y openvpn tor torbrowser-launcher proxychains\n```\n\nThen configure proxychains.conf to use TOR SOCKS5 if needed.\n\n## \n\n---\n\n**Happy Hunting! 🎯**",
+  "author": "Faisalkhan(0xBinaryOrbit)",
+  "createdAt": "2025-11-1",
+  "updatedAt": "2025-11-1",
+  "tags": [
+    "Kali Linux",
+    "Setup Guide",
+    "Bug Bounty",
+    "Penetration Testing",
+    "Tools"
+  ],
+  "category": "Setup Guides",
+  "thumbnail": "/placeholder.svg?height=400&width=600&text=Kali+Linux+Setup",
+  "readTime": "12 min",
+  "difficulty": "Intermediate",
+  "likes": 287,
+  "views": 1890,
+  "featured": false
+}
   
   ],
 
@@ -2197,6 +2220,162 @@ Welcome to the Universe of Hacking! 🛡️
     "difficulty": null,
     "description": "A CTF event organized by Computer Science students of Universitas Indonesia. The main event is aimed for Indonesian citizens, but everyone is welcome to participate in the mirror contest. This is a mirror event of an already held local event."
   },
+    {
+    "id": "compfest-2025",
+    "name": "COMPFEST CTF 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-10-04T02:00:00Z",
+    "endDate": "2025-10-05T02:00:00Z",
+    "url": "https://compfest.id/",
+    "type": "Jeopardy",
+    "participants": null,
+    "prize": "To be determined",
+    "difficulty": null,
+    "description": "A CTF event organized by Computer Science students of Universitas Indonesia. The main event is aimed for Indonesian citizens, but everyone is welcome to participate in the mirror contest. This is a mirror event of an already held local event."
+  },
+  {
+    "id": "ctf-at-ac-finals-2025",
+    "name": "CTF@AC - Finals",
+    "platform": "CTFtime",
+    "startDate": "2025-11-07T15:00:00Z",
+    "endDate": "2025-11-09T09:00:00Z",
+    "url": "https://ctf.ac.upt.ro/",
+    "type": "Jeopardy",
+    "participants": "On-site",
+    "prize": "Cash prizes (TBD)",
+    "difficulty": "Intermediate",
+    "description": "A Capture the Flag competition organized by the cybersecurity team of Politehnica University Timisoara. This on-site event aims to promote cybersecurity culture and attract students passionate about IT and security. Max team size is 3, with separate PARTICIPANT (under 25) and OPEN categories."
+  },
+  {
+    "id": "infobahn-ctf-2025",
+    "name": "Infobahn CTF 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-11-07T17:00:00Z",
+    "endDate": "2025-11-09T17:00:00Z",
+    "url": "https://2025.infobahnc.tf/",
+    "type": "Jeopardy",
+    "participants": "Online",
+    "prize": "TBD",
+    "difficulty": "Beginner-Friendly",
+    "description": "The first-ever Capture The Flag event from the Infobahn team! A fun online jeopardy-style competition for everyone, featuring challenges in Web, Reverse Engineering, Cryptography, Binary Exploitation, Jail, and more. Includes a dedicated Beginner category to help newcomers learn and get started."
+  },
+  {
+    "id": "buckeyectf-2025",
+    "name": "BuckeyeCTF 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-11-08T01:00:00Z",
+    "endDate": "2025-11-10T01:00:00Z",
+    "url": "https://ctf.osucyber.club/",
+    "type": "Jeopardy",
+    "participants": "Online",
+    "prize": "Cash prizes for US & OSU students",
+    "difficulty": "Beginner-Friendly",
+    "description": "Run by students and alumni from Cyber Security Club @ Ohio State. This beginner-friendly online jeopardy CTF features web, reversing, binary exploitation, and crypto challenges. Three divisions: Open (no limit), US Undergraduate/High School, and Ohio State (1-4 students)."
+  },
+  {
+    "id": "equinor-ctf-2025",
+    "name": "Equinor CTF 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-11-08T09:00:00Z",
+    "endDate": "2025-11-08T19:00:00Z",
+    "url": "https://ctf.equinor.com/",
+    "type": "Jeopardy",
+    "participants": "On-site (Oslo, Norway)",
+    "prize": "TBD",
+    "difficulty": "Intermediate",
+    "description": "Hosted by the Equinor Cyber Defence Center and EPT, this on-site CTF in Oslo is aimed at Norwegian students and security professionals. A 10-hour intensive jeopardy competition with limited venue capacity. Registration opens in August 2025."
+  },
+  {
+    "id": "saarctf-2025",
+    "name": "saarCTF 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-11-08T13:00:00Z",
+    "endDate": "2025-11-08T22:00:00Z",
+    "url": "https://ctf.saarland/",
+    "type": "Attack-Defense",
+    "participants": "Online",
+    "prize": "TBD",
+    "difficulty": "Advanced",
+    "description": "An annual high-rated Attack-Defense CTF competition organized by saarsec, the CTF team of Saarland University. A prestigious 9-hour online event known for its challenging real-world security scenarios and high-quality infrastructure."
+  },
+  {
+    "id": "poc-ctf-final-2025",
+    "name": "POC CTF Final 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-11-13T23:00:00Z",
+    "endDate": "2025-11-14T06:00:00Z",
+    "url": "https://powerofcommunity.net/2025/ctf.html",
+    "type": "Jeopardy",
+    "participants": "On-site (Seoul, Korea)",
+    "prize": "$10,000 total prize pool",
+    "difficulty": "Advanced",
+    "description": "The Power Of Community CTF Final at Four Seasons Hotel in Seoul. A prestigious individual competition (no teams) with significant cash prizes: $5,000 for 1st, $3,000 for 2nd, and $2,000 for 3rd place. A high-stakes on-site event for elite competitors."
+  },
+  {
+    "id": "curiosity-ctf-2025",
+    "name": "Curiosity CTF 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-11-14T20:00:00Z",
+    "endDate": "2025-11-16T20:00:00Z",
+    "url": "http://2025.curiosityctf.xyz/",
+    "type": "Jeopardy",
+    "participants": "Online",
+    "prize": "TBD",
+    "difficulty": "Beginner-Friendly",
+    "description": "The debut jeopardy-style online CTF from Team Curiosity! Featuring challenges across web, crypto, reverse engineering, forensics, and OSINT categories. Designed to be both fun and educational for players of all skill levels. Join us and let curiosity guide you to the flags!"
+  },
+  {
+    "id": "tu-delft-ctf-2025",
+    "name": "TU Delft CTF 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-11-15T08:00:00Z",
+    "endDate": "2025-11-15T16:00:00Z",
+    "url": "https://ctf.ewi.tudelft.nl/",
+    "type": "Jeopardy",
+    "participants": "On-site (Delft, Netherlands)",
+    "prize": "TBD",
+    "difficulty": "Beginner-Friendly",
+    "description": "The yearly CTF hosted by TU Delft CTF Team on their campus. This beginner-friendly 8-hour on-site event allows team formation (4 members) or individual registration with team matching. Perfect for newcomers to CTFs or those with some experience looking for engaging challenges."
+  },
+  {
+    "id": "blackhat-mea-ctf-2025",
+    "name": "BlackHat MEA CTF Final 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-12-02T08:00:00Z",
+    "endDate": "2025-12-04T15:00:00Z",
+    "url": "https://blackhatmea.com/capture-the-flag",
+    "type": "Jeopardy",
+    "participants": "On-site (Riyadh)",
+    "prize": "$187,000 total prize pool",
+    "difficulty": "Mixed Levels",
+    "description": "A major CTF tournament hosted by Black Hat MEA in collaboration with SAFCSP, featuring over 500 participants across amateur, intermediate and expert levels. Qualification round in September leads to this on-site final in Riyadh with massive prizes totaling $187,000 across web, reversing, PWN, crypto and forensics categories."
+  },
+  {
+    "id": "bsides-algiers-2025",
+    "name": "BSides Algiers 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-12-18T19:00:00Z",
+    "endDate": "2025-12-20T07:00:00Z",
+    "url": "https://shellmates.club/events/bsidesalgiers25",
+    "type": "Jeopardy",
+    "participants": "Hybrid (Online & On-site)",
+    "prize": "TBD",
+    "difficulty": "Intermediate to Advanced",
+    "description": "A jeopardy-style CTF organized by Shellmates Club featuring intermediate to extreme challenges in reverse-engineering, binary exploitation, cryptography, web security and more. Running both onsite (Algerian teams only) and online, with infrastructure sponsored by Google CTF."
+  },
+  {
+    "id": "wannagame-championship-2025",
+    "name": "WannaGame Championship 2025",
+    "platform": "CTFtime",
+    "startDate": "2025-12-06T01:00:00Z",
+    "endDate": "2025-12-08T01:00:00Z",
+    "url": "https://ctf.cnsc.com.vn/",
+    "type": "Jeopardy",
+    "participants": "Online",
+    "prize": "Vietnamese student prizes",
+    "difficulty": "Intermediate to Advanced",
+    "description": "A 48-hour jeopardy-style CTF hosted by VNUHCM - University of Information Technology, created by UIT students and researchers from InSecLab. Features challenging tasks across Binary Exploitation, Reverse Engineering, Web Exploitation, Cryptography, Web3 and Forensics. Registration opens November 11, 2025."
+  },
   {
     "id": "securinets-quals-2025",
     "name": "Securinets CTF Quals 2025",
@@ -3409,6 +3588,338 @@ Welcome to the Universe of Hacking! 🛡️
         }
       ]
     },
+     {
+    "id": "n1",
+    "headline": "Google Project Zero Announces Reporting Transparency Trial Policy to Shorten Upstream Patch Gap",
+    "summary": "Google Project Zero is testing a new reporting transparency policy aimed at improving the upstream patch gap.",
+    "fullContent": "Google Project Zero is testing a new reporting transparency policy aimed at improving the upstream patch gap, 'the period where an upstream vendor has a fix available, but downstream dependents, who are ultimately responsible for shipping fixes to users, haven't yet integrated it into their end product.' Google's 90+30 policy remains in place; vendors will still have 90 days to address a reported vulnerability, and Google will wait 30 days after the patch has been released to report technical details of the issue. What is different is the early announcement of a vulnerability's existence.",
+    "impact": "This change could significantly reduce the window of exposure for vulnerabilities by increasing transparency and putting pressure on vendors to accelerate patch adoption.",
+    "category": "Vulnerability Management",
+    "subcategory": "Disclosure Policies",
+    "date": "2025-07-31",
+    "severity": "Medium",
+    "source": "SANS NewsBites",
+    "authors": ["Google Project Zero"],
+    "tags": ["vulnerability disclosure", "patch management", "Google"],
+    "references": [
+      {
+        "title": "Google Project Zero Blog",
+        "url": "https://googleprojectzero.blogspot.com"
+      },
+      {
+        "title": "The Record Media",
+        "url": "https://therecord.media"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Increased transparency is good, so they can't state they were not informed. This process also tracks any extension requests."
+      },
+      {
+        "author": "Pescatore",
+        "comment": "We are long past the point where vulnerabilities can rely on security through obscurity to be hidden."
+      }
+    ]
+  },
+  {
+    "id": "n2",
+    "headline": "Microsoft Releases Unscheduled Update to Fully Mitigate Critical WSUS Vulnerability; CISA Adds it to KEV",
+    "summary": "Microsoft releases emergency patch for actively exploited WSUS vulnerability (CVE-2025-59287) with CVSS 9.8 score.",
+    "fullContent": "Microsoft released an unscheduled update to address a critical deserialization of untrusted data vulnerability in Windows Server Update Service (WSUS) (CVE-2025-59287). An earlier update did not fully mitigate the existing issue, which affects Windows Server 2012, 2016, 2019, 2022, and 2025, and the vulnerability has been actively exploited. CISA added the vulnerability to the Known Exploited Vulnerabilities (KEV) catalog with a mitigation deadline of November 14, 2025 for Federal Civilian Executive Branch agencies. CISA advises: 1. Identify servers with WSUS Server Role enabled and ports 8530/8531 open; 2. Apply the out-of-band security update released on October 23, 2025; 3. Apply updates to remaining Windows servers. Reboot required after installation.",
+    "impact": "Critical remote code execution vulnerability affecting core update infrastructure with active exploitation in the wild.",
+    "category": "Vulnerability Management",
+    "subcategory": "Critical Patches",
+    "date": "2025-10-27",
+    "severity": "Critical",
+    "source": "SANS NewsBites",
+    "authors": ["Microsoft", "CISA"],
+    "tags": ["WSUS", "CVE-2025-59287", "RCE", "active exploitation", "emergency patch"],
+    "references": [
+      {
+        "title": "Microsoft Security Update Guide",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59287"
+      },
+      {
+        "title": "CISA KEV Catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "There is exploit code circulating for CVE-2025-59287, which has a CVSS score of 9.8. You have to reboot servers after applying the update. Make sure WSUS ports (8530 and 8531) are not Internet accessible."
+      },
+      {
+        "author": "Frost",
+        "comment": "Exploit code is out for using this vulnerability with calc.exe. It won't be tough to weaponize it to install additional payloads."
+      }
+    ]
+  },
+  {
+    "id": "n3",
+    "headline": "AWS Outage Post-Event Report Reveals DNS Race Condition as Root Cause",
+    "summary": "Amazon publishes detailed analysis of the 16-hour AWS outage that disrupted services worldwide.",
+    "fullContent": "Amazon has published a post-event summary of the AWS outage that impacted the US-EAST-1 region data center on October 20, 2025, disrupting sites and online services worldwide. The incident was triggered by a latent defect within the service's automated DNS management system that caused endpoint resolution failures for DynamoDB. The failure was caused by a latent race condition in the DynamoDB DNS management system that resulted in an incorrect empty DNS record for the service's regional endpoint, which triggered cascading disruptions to NLB service, EC2 launches, and Lambda functions. Amazon resolved the outage after nearly 16 hours. The faulty DNS planner and enactor automation has been disabled while Amazon fixes the issue and adds additional protections.",
+    "impact": "Major cloud service disruption affecting millions of users and services worldwide for 16 hours.",
+    "category": "Cloud Security",
+    "subcategory": "Service Disruption",
+    "date": "2025-10-27",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["Amazon Web Services"],
+    "tags": ["AWS", "outage", "DNS", "cloud", "service disruption"],
+    "references": [
+      {
+        "title": "AWS Service Health Dashboard",
+        "url": "https://health.aws.amazon.com/"
+      },
+      {
+        "title": "AWS Post-Event Summary",
+        "url": "https://aws.amazon.com/message/"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "For once, it really was DNS. You may need to summarize the report for management who are asking what happened. Follow that up with a plan for no single points of failure."
+      },
+      {
+        "author": "Frost",
+        "comment": "DNS is amazing, but it is still so fragile. I wonder if things like this will eventually make people reconsider how DNS works."
+      }
+    ]
+  },
+  {
+    "id": "n4",
+    "headline": "New Firefox Extensions Required to Disclose Data Collection and Sharing",
+    "summary": "Mozilla announces new policy requiring Firefox extensions to disclose data collection practices starting November 3, 2025.",
+    "fullContent": "Mozilla has announced a new policy requiring Firefox extensions to disclose whether they collect and/or transmit personal data. Starting Monday, November 3, 2025, all new Firefox extensions will be required to specify if they collect or transmit personal data in their manifest.json file using the browser_specific_settings.gecko.data_collection_permissions key. While the requirement applies only to new extensions at first, the policy will be rolled out to all extensions during the first half of 2026. Mozilla notes that extensions that do not collect or transmit any personal data are required to specify this by setting the none required data collection permission. The data gathering and sharing information will be displayed in the installation dialog along with the extension's permissions.",
+    "impact": "Improved user privacy and transparency for browser extension ecosystem.",
+    "category": "Privacy",
+    "subcategory": "Browser Security",
+    "date": "2025-10-27",
+    "severity": "Low",
+    "source": "SANS NewsBites",
+    "authors": ["Mozilla"],
+    "tags": ["Firefox", "extensions", "privacy", "data collection", "browser security"],
+    "references": [
+      {
+        "title": "Mozilla Blog Announcement",
+        "url": "https://blog.mozilla.org"
+      },
+      {
+        "title": "Firefox Add-ons Documentation",
+        "url": "https://extensionworkshop.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Initially only new extensions, not updates to existing ones, are required to implement the new consent. Your data collection settings will be viewable on the Firefox about:addons page."
+      },
+      {
+        "author": "Pescatore",
+        "comment": "Putting nutrition and calorie data on food didn't change everyone's behavior but did enable motivated munchers to make better decisions. The same is true with privacy health."
+      }
+    ]
+  },
+  {
+    "id": "n5",
+    "headline": "QNAP Warns NetBak PC Agent Affected by Critical ASP.NET Core Vulnerability",
+    "summary": "QNAP security advisory warns that NetBak PC Agent may be affected by critical ASP.NET Core vulnerability CVE-2025-55315.",
+    "fullContent": "QNAP has published a security advisory describing how a critical ASP.NET Core vulnerability (CVE-2025-55315) recently disclosed by Microsoft may affect QNAP's NetBak PC Agent, which installs and depends on Microsoft ASP.NET Core components during setup. QNAP urges users to make sure they have installed the most up-to-date version of ASP.NET Core on their Windows systems. CVE-2025-55315 is a security bypass issue that was detected in the Kestrel ASP.NET Core web server, and allows an authorized attacker to bypass a security feature over a network via HTTP Request/Response Smuggling. In mid-October Microsoft addressed the vulnerability, which has the highest known severity rating for an ASP.NET Core vulnerability.",
+    "impact": "Critical security bypass vulnerability affecting backup software with potential for HTTP request smuggling attacks.",
+    "category": "Vulnerability Management",
+    "subcategory": "Software Security",
+    "date": "2025-10-27",
+    "severity": "Critical",
+    "source": "SANS NewsBites",
+    "authors": ["QNAP", "Microsoft"],
+    "tags": ["QNAP", "ASP.NET", "CVE-2025-55315", "backup", "security bypass"],
+    "references": [
+      {
+        "title": "QNAP Security Advisory",
+        "url": "https://www.qnap.com/security-advisory"
+      },
+      {
+        "title": "Microsoft Security Update",
+        "url": "https://msrc.microsoft.com/update-guide"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "In addition to applying the update from Microsoft, you need to update the ASP.NET Core Runtime on systems running NetBak PC Agent either by reinstalling the agent or downloading the latest runtime."
+      }
+    ]
+  },
+  {
+    "id": "n6",
+    "headline": "iOS 26 Purges Spyware IoCs by Overwriting Critical Log File",
+    "summary": "Researchers discover iOS 26 overwrites shutdown.log file, eliminating key evidence of Pegasus and Predator spyware infections.",
+    "fullContent": "Researchers at iVerify have observed that iOS 26 purges evidence of Pegasus and Predator spyware infections due to the way the shutdown.log file is managed. For years, the shutdown.log file has been an invaluable artifact in the detection of iOS malware. Located within the Sysdiagnoses in the Unified Logs section, it has served as a silent witness to the activities occurring on an iOS device, even during its shutdown sequence. Certain types of spyware have been found to leave subtle traces in this file, which then serves as an indicator of compromise. With the introduction of iOS 26, the operating system now overwrites the shutdown.log file on every device reboot. Earlier versions of iOS appended new entries, preserving older data.",
+    "impact": "Reduced forensic capabilities for detecting sophisticated mobile spyware on updated iOS devices.",
+    "category": "Mobile Security",
+    "subcategory": "Forensics",
+    "date": "2025-10-21",
+    "severity": "Medium",
+    "source": "SANS NewsBites",
+    "authors": ["iVerify Research"],
+    "tags": ["iOS", "spyware", "forensics", "Pegasus", "Predator", "mobile security"],
+    "references": [
+      {
+        "title": "iVerify Research Report",
+        "url": "https://iverify.io/reports"
+      },
+      {
+        "title": "Apple Security Updates",
+        "url": "https://support.apple.com/security"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "You should be testing iOS 26 and filing feedback/bug reports with Apple. Beyond the overwrite of this log, which is likely unintended, some UI changes may be frustrating to users."
+      }
+    ]
+  },
+  {
+    "id": "n7",
+    "headline": "Wordfence Blocked 8.7 Million Exploit Attempts Against WordPress Plugins in Two Days",
+    "summary": "Massive exploit campaign targets known vulnerabilities in GutenKit and Hunk Companion WordPress plugins.",
+    "fullContent": "Wordfence says that on October 8 and 9, 2025, it blocked 8.7 million attempts to exploit known critical vulnerabilities affecting the GutenKit and Hunk Companion WordPress plugins. The vulnerabilities, CVE-2024-9234, CVE-2024-9707, and CVE-2024-11972, can all be exploited to achieve remote code execution. CVE-2024-9234 is a missing capability check on the install_and_activate_plugin_from_external() function allowing arbitrary file uploads; it affects the GutenKit plugin up through version 2.1.0. CVE-2024-9707 and CVE-2024-11972 are missing capability check issues that could lead to unauthorized plugin installation/activation in the Hunk Companion WordPress plugin. Users are urged to update to the most recent version of both plugins, which have 40,000 and 8,000 active installations respectively.",
+    "impact": "Mass-scale automated attacks targeting vulnerable WordPress plugins for remote code execution.",
+    "category": "Web Security",
+    "subcategory": "WordPress Security",
+    "date": "2025-10-27",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["Wordfence"],
+    "tags": ["WordPress", "plugins", "RCE", "mass exploitation", "web security"],
+    "references": [
+      {
+        "title": "Wordfence Threat Intelligence",
+        "url": "https://www.wordfence.com/threat-intel"
+      },
+      {
+        "title": "WordPress Plugin Directory",
+        "url": "https://wordpress.org/plugins"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "WordPress plugin flaws continue to be blood in the water for attackers. Make sure you're automatically updating plugins and using a WAF."
+      },
+      {
+        "author": "Dukes",
+        "comment": "That's impressive: well over eight and half million exploit attempts in just two days. The bad guys have definitely automated their exploit pipeline."
+      }
+    ]
+  },
+  {
+    "id": "n8",
+    "headline": "UN Cybercrime Convention Signed Amid Human Rights Criticism",
+    "summary": "72 countries sign UN Convention against Cybercrime while US declines and human rights groups express concerns.",
+    "fullContent": "On October 25, 2025, officials from 72 countries signed the United Nations Convention against Cybercrime, a treaty first proposed by Russia in 2017 to succeed 2001's Budapest Convention. The Convention's stated scope is to prevent and combat cyber offences, recover proceeds of these offences, and strengthen international cooperation in sharing electronic evidence across borders. The Convention enumerates and criminalizes ten types of cyber-dependent and cyber-enabled conduct; requires establishment of jurisdiction and cooperation among signatory States; mandates that States empower their authorities to rapidly secure electronic data; and requires various preventive measures across all sectors. Tech industry companies and human rights groups have criticized the treaty, citing potential abuses of broad surveillance powers and threats to human rights. The US has not signed the Convention.",
+    "impact": "Global framework for cybercrime prosecution with potential implications for digital rights and international cooperation.",
+    "category": "Policy & Compliance",
+    "subcategory": "International Law",
+    "date": "2025-10-27",
+    "severity": "Medium",
+    "source": "SANS NewsBites",
+    "authors": ["United Nations"],
+    "tags": ["UN", "cybercrime", "treaty", "international law", "human rights"],
+    "references": [
+      {
+        "title": "UN Office on Drugs and Crime",
+        "url": "https://www.unodc.org"
+      },
+      {
+        "title": "Human Rights Watch Statement",
+        "url": "https://www.hrw.org"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "This is the first global treaty to criminalize crimes dependent on the internet and recognize non-consensual distribution of intimate images as an offense. The risks are that cybersecurity research could be criminalized."
+      },
+      {
+        "author": "Frost",
+        "comment": "For signatories, new expanded surveillance powers are enacted requiring evidence retention for 4 years. It doesn't sound like a free and open internet."
+      }
+    ]
+  },
+  {
+    "id": "n9",
+    "headline": "Counter Ransomware Initiative Publishes Supply Chain Resilience Guidance",
+    "summary": "International Counter Ransomware Initiative releases guidance for organizations to build supply chain resilience against ransomware.",
+    "fullContent": "The International Counter Ransomware Initiative (CRI) has published Guidance for organisations to build supply chain resilience against ransomware, following the group's 2025 summit. The new supply chain guidance was developed by CRI's policy leads, the UK and Singapore. The guidance aims to reduce the likelihood of a ransomware incident having a critical effect on an organization by: raising awareness of the ransomware threat across supply chains; promoting good cyber hygiene to protect supply chains; and ensuring supply chain vulnerabilities are factored into risk assessment and procurement decisions. The guidance aims to improve organizations' supply chain security posture against ransomware risks by understanding supply chain security importance; identifying partners and their security posture; developing implementation plans; and reviewing approaches to supply chain security. CRI has 61 member countries and six member international organizations.",
+    "impact": "International framework for improving supply chain security against ransomware threats.",
+    "category": "Threat Intelligence",
+    "subcategory": "Ransomware",
+    "date": "2025-10-27",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["Counter Ransomware Initiative"],
+    "tags": ["ransomware", "supply chain", "international cooperation", "guidance"],
+    "references": [
+      {
+        "title": "UK Government Guidance",
+        "url": "https://www.gov.uk"
+      },
+      {
+        "title": "CRI Official Website",
+        "url": "https://www.state.gov/counter-ransomware-initiative"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Supply chain security requires third-party security as well as an ongoing understanding of your software, hardware, and firmware bill of materials."
+      },
+      {
+        "author": "Dukes",
+        "comment": "The guidance published is already well-established cybersecurity best practices. Competent security teams have already factored supply chain disruption into their risk assessment."
+      }
+    ]
+  },
+  {
+    "id": "n10",
+    "headline": "Swedish Power Grid Operator Suffers Cyber Attack, Confirms Data Breach",
+    "summary": "Svenska Kraftnät confirms data breach through external file transfer solution, but electricity supply unaffected.",
+    "fullContent": "Swedish electricity transmission system operator Svenska Kraftnät has confirmed that they suffered a data breach resulting in the theft of information. The organization is investigating what information was compromised. According to a company statement, the breach involved a limited, external file transfer solution. Svenska Kraftnät Head of Information Security Cem Göcgoren said the incident did not affect electricity supply. While a group of threat actors has claimed responsibility for the attack, Göcgoren said they are not commenting on perpetrators or motives until confirmed information is available. The company is working with law enforcement and national cybersecurity authorities on the investigation.",
+    "impact": "Critical infrastructure data breach with potential implications for energy sector security.",
+    "category": "Critical Infrastructure",
+    "subcategory": "Energy Sector",
+    "date": "2025-10-27",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["Svenska Kraftnät"],
+    "tags": ["critical infrastructure", "energy", "data breach", "Sweden", "file transfer"],
+    "references": [
+      {
+        "title": "Svenska Kraftnät Statement",
+        "url": "https://www.svk.se"
+      },
+      {
+        "title": "The Record Media Coverage",
+        "url": "https://therecord.media"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "External file transfer systems should be considered critical infrastructure. Make sure you are implementing security best practices and actively monitoring for malfeasance."
+      },
+      {
+        "author": "Marcus H. Sachs",
+        "comment": "This incident underscores why critical infrastructure operators must maintain strict separation between enterprise IT and operational technology systems."
+      }
+    ]
+  },
     {
       "id": "news-2025-003",
       "headline": "EU Biometric Identity Border Check Rollout Starting This Fall",
