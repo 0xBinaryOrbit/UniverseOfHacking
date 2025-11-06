@@ -3920,6 +3920,300 @@ Welcome to the Universe of Hacking! 🛡️
       }
     ]
   },
+  {
+    "id": "sans-2025-11-03-uk-water-utility-cyberattacks",
+    "headline": "UK Water Utility Cyberattacks",
+    "summary": "According to information obtained from the UK's Drinking Water Inspectorate (DWI), drinking water suppliers have reported five cyberattacks since the beginning of 2024. In all, DWI has received 15 reports under Network and Information Systems (NIS) Regulations from suppliers since January 1, 2024.",
+    "fullContent": "According to information obtained from the UK's Drinking Water Inspectorate (DWI), drinking water suppliers have reported five cyberattacks since the beginning of 2024. In all, DWI has received 15 reports under Network and Information Systems (NIS) Regulations from suppliers since January 1, 2024. Of those, 10 were deemed not to be cyber-related; the other five were classified as \"out-of-NIS-scope systems.\" Current NIS rules require formal reporting of cyber incidents that disrupt essential services; therefore, the detection of an intruder's presence on an IT system does not fall under the mandatory reporting guidelines. When the UK's Cyber Security and Resilience Bill is introduced in Parliament later this year, the high threshold for mandatory reporting is expected to be amended. Recorded Future News obtained the incident data from DWI under freedom of information laws.",
+    "impact": "Critical infrastructure security gaps in water utilities with underreporting of cyber incidents",
+    "category": "Critical Infrastructure",
+    "subcategory": "Water Security",
+    "date": "2025-11-03",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["SANS Institute"],
+    "tags": ["water-utility", "critical-infrastructure", "uk", "nis-regulations", "cyberattacks", "reporting-gaps"],
+    "references": [
+      {
+        "title": "Hackers are attacking Britain's drinking water suppliers",
+        "url": "https://therecord.media"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Marcus H. Sachs",
+        "comment": "This story highlights a real gap between what is technically required and what is actually needed to stay safe. Today utilities only have to report cyber incidents if they interrupt service, but that means a lot of early warning signs never get shared."
+      },
+      {
+        "author": "Neely",
+        "comment": "When it comes to required reporting, make sure you're on the same page about what is and isn't in scope. In this case the reporting of out of scope systems aids understanding the scope of the threat."
+      }
+    ]
+  },
+  {
+    "id": "sans-2025-11-03-eu-grid-resilience-funding",
+    "headline": "European Commission is Funding Projects Focused on Grid Resilience; US Grid Operators Urged to Unify Physical and Cyber Security",
+    "summary": "The European Commission is focusing on improving power grid resilience, funding several projects including the eFORT framework for identifying, preventing, and mitigating risks and vulnerabilities in power systems.",
+    "fullContent": "The European Commission is focusing on improving power grid resilience, funding several projects including the eFORT framework, which is being developed by researchers at Netherlands Organisation for Applied Scientific Research (TNO) and the Delft University of Technology (TU Delft). According to the project's website, \"eFORT will increase power system stability by developing technologies for identifying, preventing, and mitigating risks and vulnerabilities.\" TNO has also developed SOARCA, \"an open-source tool that allows organisations to experiment with advanced technology to automatically repel cyber attacks, based on shareable security playbooks.\" The EU power grid is interconnected, with issues in one country easily leading to problems in others. For example, in April 2025, a series of cascading failures left Spain, Portugal, and parts of France without electricity, reminiscent of the 2015 Ukrainian power grid outage caused by a cyberattack. Additionally, power plant IT infrastructure is a unique assemblage of software, hardware, and operating systems from a variety of vendors who may be resistant to having cybersecurity professionals dig too deeply. In a separate, related story, power grid operators in the US are increasingly being urged \"to unify their cybersecurity and physical security strategies.\"",
+    "impact": "Enhanced power grid security through EU-funded resilience projects and unified security strategies",
+    "category": "Critical Infrastructure",
+    "subcategory": "Energy Security",
+    "date": "2025-11-03",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["SANS Institute"],
+    "tags": ["power-grid", "energy-security", "european-commission", "efort", "soarca", "physical-security"],
+    "references": [
+      {
+        "title": "The race to shore up Europe's power grids against cyberattacks and sabotage",
+        "url": "https://www.theregister.com"
+      },
+      {
+        "title": "eFORT project website",
+        "url": "https://efort-project.eu"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Marcus H. Sachs",
+        "comment": "Europe's new grid resilience projects show that the problem isn't just about stopping hackers, it's about keeping the lights on as power control systems become more connected and dependent on adjacent systems."
+      },
+      {
+        "author": "Neely",
+        "comment": "Don't forget about physical security when implementing and testing controls. I'm reminded of the power company that had an old control system in a remote shed which had been added to the corporate fiber backbone without ensuring the door locks were functional."
+      }
+    ]
+  },
+  {
+    "id": "sans-2025-10-30-south-dakota-data-center-wiring",
+    "headline": "South Dakota State Data Center Disruptions Traced to Mislabeled Wiring",
+    "summary": "South Dakota's state government IT infrastructure disruption in August 2025 was caused by mislabeled wiring during UPS replacement, damaging critical network equipment and causing widespread outages.",
+    "fullContent": "Last week, South Dakota's Bureau of Information and Telecommunications Commissioner, Mark Wixon, testified before the state legislature's Government Operations and Audit Committee about an August 2025 disruption of South Dakota's state government IT infrastructure. The incident began during the replacement of an uninterruptible power supply at the South Dakota State Data Center. The device tripped the data center's main breaker several times, ultimately damaging the device and necessitating its replacement. However, some switches were mislabeled, leading electricians to believe they were connected to that main breaker when they were in fact connected to a different breaker. The South Dakota Searchlight writes that \"the mislabeling ultimately led to the torching of a critical, $80,000 network traffic controller switch and its backup.\" And the Aberdeen Insider notes that \"Unbeknownst to electricians, multiple breakers were drawing power from the same source, causing surges that destroyed other equipment — including industrial-grade router systems that supply the state network used by the Department of Public Safety's motor vehicles division, the Department of Revenue's tax portal, and labor office services.\"",
+    "impact": "Major government service disruption due to physical infrastructure misconfiguration",
+    "category": "Infrastructure",
+    "subcategory": "Data Center Operations",
+    "date": "2025-10-30",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["SANS Institute"],
+    "tags": ["data-center", "power-outage", "south-dakota", "infrastructure", "mislabeled-wiring", "government-services"],
+    "references": [
+      {
+        "title": "Mislabeled wires responsible for two-day IT outage in South Dakota, officials say",
+        "url": "https://statescoop.com"
+      },
+      {
+        "title": "Mislabeled electrical wiring sparked two-day state network shutdown",
+        "url": "https://southdakotasearchlight.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "We've all had multiple contractors working in our data centers, and power routing and requirements have changed since they were designed. The question is: have you performed an independent validation/check of the work done?"
+      },
+      {
+        "author": "Dukes",
+        "comment": "Not your traditional cybersecurity incident by far. Doubtful that anyone would have scripted this as part of a periodic cybersecurity table-top exercise."
+      }
+    ]
+  },
+  {
+    "id": "sans-2025-10-31-japan-ot-security-semiconductor",
+    "headline": "Japan's OT Security Guidance for Semiconductor Manufacturers",
+    "summary": "Japan's Ministry of Economy, Trade and Industry has published Operational Technology (OT) security guidance for semiconductor manufacturers to address urgent security framework needs.",
+    "fullContent": "Japan's Ministry of Economy, Trade and Industry has published Operational Technology (OT) security guidance for semiconductor manufacturers. The document states that because \"[a] comprehensive framework for promoting security measures across the entire semiconductor industry has not yet been established in Japan ... it is urgent to present guidelines for factory security measures by taking into account the status of security measures being implemented within the domestic semiconductor industry and other relevant factors, while maintaining consistency with various security standards that have been established for the global semiconductor industry.\" The document references SEMI's E187 and E188 standards, which address incorporating security into the development phase of new semiconductor manufacturing equipment and extending security to existing semiconductor manufacturing equipment. The Japanese guidance also references the US National Institute of Standards and Technology's (NIST's) Cybersecurity Framework Version 2.0 Semiconductor Manufacturing Profile, which \"identifies five primary business and mission objectives for the semiconductor manufacturing sector\": maintain environmental safety; maintain human safety; maintain production goals; maintain semiconductor quality; and protect sensitive information.",
+    "impact": "Enhanced operational technology security for critical semiconductor manufacturing infrastructure",
+    "category": "Industrial Security",
+    "subcategory": "OT Security",
+    "date": "2025-10-31",
+    "severity": "Medium",
+    "source": "SANS NewsBites",
+    "authors": ["SANS Institute"],
+    "tags": ["ot-security", "semiconductor", "japan", "nist", "industrial-control-systems", "manufacturing"],
+    "references": [
+      {
+        "title": "Japan Issues OT Security Guidance for Semiconductor Factories",
+        "url": "https://www.securityweek.com"
+      },
+      {
+        "title": "OT Security Guidelines for Semiconductor Device Factories",
+        "url": "https://www.meti.go.jp"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Where you have a choice, use a relevant standard you understand and that fits the scope of your system and abilities. Double down on one your regulator will accept. Talk to your peers about what they use, replicating rather than building controls from scratch."
+      }
+    ]
+  },
+  {
+    "id": "sans-2025-10-31-australia-badcandy-webshell-cisco",
+    "headline": "Australian Signals Directorate Warns of BADCANDY Webshell on Vulnerable Cisco IOS XE Devices",
+    "summary": "The Australian Signals Directorate warns that cyber actors are installing BADCANDY implants on Cisco IOS XE devices vulnerable to CVE-2023-20198, despite patches being available since 2023.",
+    "fullContent": "The Australian Signals Directorate (ASD) has published an advisory warning that \"Cyber actors are installing an implant dubbed 'BADCANDY' on Cisco IOS XE devices that are vulnerable to CVE-2023-20198.\" While BADCANDY itself does not maintain persistence following reboots, if threat actors have obtained account credentials or other forms of authentication, they can still have access to the affected device or network. Variations of the attack have been detected as far back as 2023. Cisco released a software update to address the critical (CVSS 10.0) vulnerability in 2023; the US Cybersecurity and Infrastructure Security Agency (CISA) added the vulnerability to the Known Exploited Vulnerabilities catalog on October 16, 2023, with a four-day mitigation window for Federal Civilian Executive Branch (FCEB) agencies.",
+    "impact": "Continued exploitation of critical Cisco vulnerability with new webshell deployment",
+    "category": "Network Security",
+    "subcategory": "Vulnerability Management",
+    "date": "2025-10-31",
+    "severity": "Critical",
+    "source": "SANS NewsBites",
+    "authors": ["SANS Institute"],
+    "tags": ["cisco", "ios-xe", "cve-2023-20198", "badcandy", "webshell", "australian-signals-directorate"],
+    "references": [
+      {
+        "title": "Don't take BADCANDY from strangers – How your devices could be implanted and what to do about it",
+        "url": "https://www.cyber.gov.au"
+      },
+      {
+        "title": "Australia warns of BadCandy infections on unpatched Cisco devices",
+        "url": "https://www.bleepingcomputer.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Given the time of year, this trick is no treat. While the flaw can be remotely exploited without authentication, you still need to check for unauthorized accounts, particularly those starting with 'Cisco.'"
+      },
+      {
+        "author": "Dukes",
+        "comment": "It's disappointing that the Australian government has to issue an advisory for a vulnerability that was disclosed with a patch made available back in 2023. It speaks volumes about the state of cyber hygiene."
+      }
+    ]
+  },
+  {
+    "id": "sans-2025-11-03-ibm-nagios-monitoring-vulnerabilities",
+    "headline": "Vulnerabilities in Monitoring Software from IBM and Nagios",
+    "summary": "Critical vulnerabilities discovered in IBM Tivoli Monitoring and Nagios XI monitoring software, including directory traversal and OS command injection flaws requiring immediate attention.",
+    "fullContent": "A pair of vulnerabilities in the KT1 component of ITM/ITCAM Agents IBM Tivoli Monitoring could be exploited by \"remote attacker to traverse directories on the system [through maliciously-crafted URLs and] view, overwrite, or append to arbitrary files on the system.\" There is not a patch for these issues. Instead, admins need to configure the agents \"to use only TLS for communication.\" Nagios released Nagios XI version 2026R1 in late September 2025; the update includes fixes for three critical OS command injection vulnerabilities. CVE-2025-34134 affects in the Business Process Intelligence (BPI) component; \"successful exploitation results in arbitrary command execution with the privileges of the Nagios XI web application user and can be leveraged to gain further control of the underlying host operating system.\" CVE-2025-34284 affects the WinRM plugin; \"successful exploitation enables arbitrary command execution with the privileges of the Nagios XI web application user and can be leveraged to modify configuration, exfiltrate data, disrupt monitoring operations, or execute commands on the underlying host operating system.\" CVE-2025-34286 affects the Core Config Manager (CCM) Run Check command; \"successful exploitation results in arbitrary command execution with the privileges of the Nagios XI web application user and can be leveraged to gain control of the underlying host operating system.\"",
+    "impact": "Critical vulnerabilities in enterprise monitoring software enabling remote code execution",
+    "category": "Vulnerability Management",
+    "subcategory": "Software Security",
+    "date": "2025-11-03",
+    "severity": "Critical",
+    "source": "SANS NewsBites",
+    "authors": ["SANS Institute"],
+    "tags": ["ibm-tivoli", "nagios", "cve-2025-34134", "cve-2025-34284", "cve-2025-34286", "monitoring-software", "rce"],
+    "references": [
+      {
+        "title": "Monitoring Software: IBM Tivoli Monitoring and Nagios XI are vulnerable",
+        "url": "https://www.heise.de"
+      },
+      {
+        "title": "Security Bulletin: IBM Tivoli Monitoring is vulnerable to unauthenticated file read and write operations",
+        "url": "https://www.ibm.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "The exploit requires an authenticated user to be successful, but don't rely on that being a high bar. Nagios IX version 2026R1 was released in September, but the CVEs were only just published, so don't panic, just get the update going."
+      },
+      {
+        "author": "Frost",
+        "comment": "Uh oh. Is there blood in the water with Monitor Software? I feel like there may be gremlins in some of the older Software Monitoring Solutions."
+      }
+    ]
+  },
+  {
+    "id": "sans-2025-10-30-proton-data-breach-observatory",
+    "headline": "Data Breach Observatory Launched by Proton",
+    "summary": "Proton AG launched the Data Breach Observatory, a public catalog of major data breaches with validated dark web monitoring in collaboration with Constella Intelligence.",
+    "fullContent": "On Thursday, October 30, 2025, privacy-focused software company Proton AG launched the Data Breach Observatory, an online public catalog of major data breaches. Proton created the project in the interest of responsible transparency and awareness, citing risks to consumers and smaller businesses when inconsistent self-reporting means breaches may go undisclosed, hidden, or ignored. Constella Intelligence is collaborating with Proton on the Observatory, conducting research and near-real-time monitoring of the dark web for leaks. Eamonn Maguire, Proton's director of engineering, AI & ML, told The Register, \"We're not simply republishing what criminals claim; we're applying validation layers before disclosure,\" stating that \"a number of processes\" will analyze and cross-reference findings; aggregated compilations will be passed over in favor of single-source information, and additional sources include \"GDPR notifications, researchers, threat intelligence feeds, and journalistic investigations.\" So far, the Observatory has identified \"794 breaches from identifiable sources, with more than 300 million records exposed,\" over 70 percent of which were small and medium-sized businesses, primarily in retail, technology, and media/entertainment sectors. 90 percent of breaches contained names and emails, 72 percent contained contact information, 49 percent contained passwords, and 24 percent contained IDs, health records, and other personally identifiable information (PII). Breaches in the Observatory are searchable by date, size, type and sensitivity of data, country, company, industry, and company size. Proton will \"always inform [an] affected organization in advance of the information being published\" to ensure organizations can protect themselves.",
+    "impact": "Improved breach transparency and validation for better cybersecurity awareness",
+    "category": "Threat Intelligence",
+    "subcategory": "Data Protection",
+    "date": "2025-10-30",
+    "severity": "Medium",
+    "source": "SANS NewsBites",
+    "authors": ["SANS Institute"],
+    "tags": ["proton", "data-breach", "observatory", "dark-web", "constella", "breach-reporting"],
+    "references": [
+      {
+        "title": "See the business data leaking onto the dark web with Proton's Data Breach Observatory",
+        "url": "https://proton.me"
+      },
+      {
+        "title": "Proton trains new service to expose corporate infosec cover-ups",
+        "url": "https://www.theregister.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Proton's value add on dark web breach discovery is validation of breaches beyond just ingesting data from the dark web. This service is targeted to small businesses who are the top targets for breaches."
+      },
+      {
+        "author": "Ullrich",
+        "comment": "So far, many companies feel their best option in case of a compromise is to ignore it. The chances of getting called out for the compromise or incurring any fines are rather small."
+      }
+    ]
+  },
+  {
+    "id": "sans-2025-10-30-denmark-chat-control-withdrawal",
+    "headline": "Denmark Steps Away from Chat Control",
+    "summary": "Denmark has withdrawn a bill that would have required service providers to scan all electronic communications, including end-to-end encrypted platforms, citing privacy concerns.",
+    "fullContent": "Denmark has withdrawn a bill that would have required service providers to scan all electronic communications, including those exchanged on end-to-end encrypted platforms, like WhatsApp. Dubbed Chat Control, the bill's stated goal was to reduce the trafficking of child abuse content. The European Commission introduced the bill in 2022. Denmark currently holds the Presidency of the Council of the European Union EU Council until the end of this calendar year. Denmark's Justice Minister says the country will support a voluntary measure for service providers to search for offending content. On October 8, Germany said it would not support the legislation. Poland and the Netherlands have also opposed the measure; France and Ireland support Chat Control.",
+    "impact": "Privacy victory as Denmark withdraws controversial encrypted communications scanning proposal",
+    "category": "Policy & Compliance",
+    "subcategory": "Privacy Regulations",
+    "date": "2025-10-30",
+    "severity": "Low",
+    "source": "SANS NewsBites",
+    "authors": ["SANS Institute"],
+    "tags": ["denmark", "chat-control", "encryption", "privacy", "european-union", "end-to-end-encryption"],
+    "references": [
+      {
+        "title": "Denmark surprisingly abandons plans for chat control",
+        "url": "https://www.heise.de"
+      },
+      {
+        "title": "Denmark reportedly withdraws Chat Control proposal following controversy",
+        "url": "https://therecord.media"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "This is a step in the right direction. One hopes they and others similarly inclined realize the futility of a limited-scope encryption back door."
+      },
+      {
+        "author": "Frost",
+        "comment": "We have so little actual privacy at this point with devices; adding another layer of decryption would be such a difficult thing. Let's be clear, this stuff that they are dealing with is abhorrent."
+      }
+    ]
+  },
+  {
+    "id": "sans-2025-11-02-former-ransomware-responders-indicted",
+    "headline": "Former Ransomware Responders Indicted for Extortion",
+    "summary": "Two former cybersecurity incident response professionals indicted for conducting ransomware attacks against five US companies while working for security firms.",
+    "fullContent": "Two former cybersecurity incident response professionals and an unnamed conspirator have been indicted by the US Department of Justice for conducting ransomware attacks against five US companies in 2023. Ryan Clifford Goldberg, a former incident response manager for Sygnia Cybersecurity Services, and Kevin Tyler Martin, a former ransomware threat negotiator for DigitalMint, are charged with conspiracy and interference with interstate commerce by extortion, and with intentional damage to protected computers. All three were employed at the time of the attacks but have since been terminated; while the unnamed \"Co-Conspirator 1\" is mentioned in the indictment and was also a DigitalMint ransomware negotiator, the filing only specifies charges for Goldberg and Martin. The trio attacked a medical device company in Florida, a pharmaceutical company in Maryland, a doctor's office and an engineering company in California, and a drone manufacturer in Virginia, all of which were engaged in interstate commerce. The conspirators deployed ALPHV BlackCat ransomware, extorting each organization for cryptocurrency in exchange for a decryption key and a promise not to publish stolen data. Only the medical device company paid the ransom, totaling approximately US$1,274,781.2 at the time. The conspiracy and extortion charges each carry a maximum sentence of 20 years in prison, and the intentional damage charge carries a maximum of 10 years; each charge carries up to US$250,000 in fines on top of forfeitures.",
+    "impact": "Major insider threat case involving cybersecurity professionals turning to ransomware attacks",
+    "category": "Threat Intelligence",
+    "subcategory": "Ransomware",
+    "date": "2025-11-02",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["SANS Institute"],
+    "tags": ["ransomware", "insider-threat", "indictment", "alphv-blackcat", "incident-response", "digitalmint", "sygnia"],
+    "references": [
+      {
+        "title": "United States of America vs. Ryan Clifford Goldberg and Kevin Tyler Martin",
+        "url": "https://www.documentcloud.org"
+      },
+      {
+        "title": "DOJ accuses US ransomware negotiators of launching their own ransomware attacks",
+        "url": "https://techcrunch.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "A clear case of ethical behavior failing or being suppressed by the perceived rewards of the attackers' game, in this case becoming affiliates for the ALPHV/BlackCat Ransomware service."
+      }
+    ]
+  },
     {
       "id": "news-2025-003",
       "headline": "EU Biometric Identity Border Check Rollout Starting This Fall",
