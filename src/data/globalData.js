@@ -1,3 +1,4 @@
+// import blog2Poster from "../assets/blog2Poster.png";
 // Global data store for the static website
 export const globalData = {
   // Site configuration
@@ -2521,6 +2522,324 @@ Welcome to the Universe of Hacking! 🛡️
   },
    {
     "id": "n1",
+    "headline": "CISA Warns FCEBs of Incomplete Patching for Exploited Cisco Flaws",
+    "summary": "CISA warns federal agencies have incorrectly reported Cisco devices as patched against two actively exploited flaws and mandates immediate updates.",
+    "fullContent": "On Wednesday, November 12, 2025, CISA issued an update warning that federal agencies have incorrectly reported Cisco Secure Adaptive Security Appliance (ASA) and Firepower devices as patched against two actively exploited flaws. CISA identified devices marked as 'patched' but running vulnerable software versions. The agency mandates immediate updates to all ASA and Firepower devices, not just public-facing ones, and provides temporary risk mitigation instructions. The flaws include CVE-2025-20333 (remote code execution, CVSS 9.9) and CVE-2025-20362 (privilege escalation, CVSS 6.5), which Cisco disclosed on November 6 due to newly observed attacks dating back to May 2025.",
+    "impact": "Federal agencies remain vulnerable to active exploitation despite previous patching efforts, requiring immediate remediation.",
+    "category": "Vulnerability Management",
+    "subcategory": "Patch Management",
+    "date": "2025-11-12",
+    "severity": "Critical",
+    "source": "SANS NewsBites",
+    "authors": ["CISA", "Cisco"],
+    "tags": ["cisco", "cisa", "patching", "federal", "zero-day"],
+    "references": [
+      {
+        "title": "CISA ED 25-03 Guidance",
+        "url": "www.cisa.gov"
+      },
+      {
+        "title": "Temporary Risk Mitigation Guidance",
+        "url": "www.cisa.gov"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "When applying mitigations to a threat like this, don't stop with just your Internet-facing devices. Update internal and standalone devices as well."
+      },
+      {
+        "author": "Frost",
+        "comment": "These firewalls were first manufactured in 2010, showing how old infrastructure remains vulnerable despite ongoing threats."
+      },
+      {
+        "author": "Murray",
+        "comment": "Dealing with these CVEs demonstrates the limitation of patching as a strategy. Completeness is more important than timeliness but we hardly ever achieve either."
+      }
+    ]
+  },
+  {
+    "id": "n2",
+    "headline": "UK Cyber Security and Resilience Bill Expands Scope of NIS Requirements",
+    "summary": "The UK introduces new cybersecurity legislation expanding NIS Regulations to include data centers, managed service providers, and critical suppliers.",
+    "fullContent": "The UK Cybersecurity and Resilience Bill was introduced in Parliament to reform and expand the existing Network and Information Systems (NIS) Regulations 2018. The legislation extends coverage to data centers, managed service providers, large load controllers, and designated critical suppliers. It requires critical infrastructure operators to report harmful cyber breaches within 24 hours initially and provide fuller reports within 72 hours. Data centers and digital service providers must promptly notify customers likely to be impacted by significant attacks. The bill introduces three levels of fines for non-compliance: £1 million for non-material contraventions, £8.5 million for material contraventions, and £17 million for material contraventions resulting in significant impact.",
+    "impact": "Expanded regulatory requirements for critical infrastructure with significant financial penalties for non-compliance.",
+    "category": "Governance & Compliance",
+    "subcategory": "Regulatory Changes",
+    "date": "2025-11-12",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["UK Government"],
+    "tags": ["UK", "regulation", "critical infrastructure", "NIS", "compliance"],
+    "references": [
+      {
+        "title": "UK Government Bill Summary",
+        "url": "www.gov.uk"
+      },
+      {
+        "title": "Press Release",
+        "url": "www.gov.uk"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Critical services will be expected to notify of attacks promptly, which should shorten the breach-to-notification interval."
+      },
+      {
+        "author": "Dukes",
+        "comment": "An important piece of legislation for the UK and possibly a blueprint for other nations. Increased focus on critical infrastructure is required."
+      }
+    ]
+  },
+  {
+    "id": "n3",
+    "headline": "Google Sues Phishing-as-a-Service 'Lighthouse'",
+    "summary": "Google files lawsuit against Chinese operators of Lighthouse phishing kit that spoofs US institutions and targets victims via SMS and e-commerce lures.",
+    "fullContent": "Google LLC filed a complaint in a New York district court against 25 unnamed defendants based in China who allegedly manage the 'Lighthouse' phishing software kit. Lighthouse is offered by subscription in SMS and e-commerce versions with hundreds of templates for fraudulent websites mimicking legitimate pages, focusing on US targets including toll collection agencies, financial institutions, shipping companies, and government entities. The SMS version enables mass text messaging, while the e-commerce version distributes lures via ads and social media. Lighthouse notifies users if sites are flagged and mimics MFA protection. Google alleges violation of RICO Act, Lanham Act, and Computer Fraud and Abuse Act, seeking injunctions and damages.",
+    "impact": "Major legal action against sophisticated phishing operation targeting US consumers and institutions.",
+    "category": "Threat Intelligence",
+    "subcategory": "Phishing",
+    "date": "2025-11-12",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["Google"],
+    "tags": ["phishing", "lawsuit", "china", "smishing", "RICO"],
+    "references": [
+      {
+        "title": "Google Blog Post",
+        "url": "blog.google"
+      },
+      {
+        "title": "Legal Complaint PDF",
+        "url": "regmedia.co.uk"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Pescatore",
+        "comment": "Google spent over $10M fighting legislation, so it's nice to see expenditure aimed at reducing impact to those who view and click on their ads."
+      },
+      {
+        "author": "Neely",
+        "comment": "Google is implementing new features to detect/block common scam messages and adding malicious link protection."
+      },
+      {
+        "author": "Murray",
+        "comment": "Google's 49-page complaint is very well drawn with evidence of violation of specific laws and damage to Google and the public."
+      }
+    ]
+  },
+  {
+    "id": "n4",
+    "headline": "Patch Tuesday: Microsoft, Adobe, Cisco, and Ivanti",
+    "summary": "November Patch Tuesday brings fixes for over 60 Microsoft vulnerabilities including an actively exploited zero-day, plus updates from Adobe, Cisco, and Ivanti.",
+    "fullContent": "Microsoft released updates addressing more than 60 vulnerabilities, including a high-severity Windows kernel flaw (CVE-2025-62215) being actively exploited and added to CISA's KEV catalog. The batch includes critical vulnerabilities in Microsoft Graphics Component (CVE-2025-60724) and Windows DirectX (CVE-2025-60716). Adobe released fixes for InDesign, InCopy, Photoshop, Illustrator and other products. Cisco released seven security advisories including critical remote code execution vulnerabilities in Cisco Unified Contact Center Express. Ivanti released updates for Endpoint Manager addressing three high-severity vulnerabilities.",
+    "impact": "Multiple critical vulnerabilities across major software vendors requiring immediate patching.",
+    "category": "Vulnerability Management",
+    "subcategory": "Patch Management",
+    "date": "2025-11-11",
+    "severity": "Critical",
+    "source": "SANS NewsBites",
+    "authors": ["Microsoft", "Adobe", "Cisco", "Ivanti"],
+    "tags": ["patch-tuesday", "microsoft", "adobe", "cisco", "ivanti", "zero-day"],
+    "references": [
+      {
+        "title": "Microsoft Patch Tuesday",
+        "url": "isc.sans.edu"
+      },
+      {
+        "title": "Adobe Security Bulletins",
+        "url": "helpx.adobe.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Get after your Microsoft, Adobe, Ivanti and Cisco updates. These devices and applications are all targets for exploitable flaws."
+      }
+    ]
+  },
+  {
+    "id": "n5",
+    "headline": "SAP Security Updates Include Fixes for Critical Flaws",
+    "summary": "SAP releases 26 security notes including critical hard-coded credentials vulnerability in SQL Anywhere Monitor and code injection in Solution Manager.",
+    "fullContent": "SAP published 26 new or updated security notes including a critical (CVSS 10.0) hard-coded credentials issue in the non-GUI variant of SQL Anywhere Monitor (CVE-2025-42890). The patch removes SQL Anywhere Monitor completely, with SAP recommending stopping its use as a temporary workaround. Another note addresses a critical (CVSS 9.9) code injection vulnerability in SAP Solution Manager (CVE-2025-42887) by adding input checks. SAP also updated a security note for a critical (10.0) deserialization vulnerability in SAP NetWeaver disclosed in October. No active exploitation has been observed yet.",
+    "impact": "Critical vulnerabilities in SAP enterprise software requiring immediate attention and potential system changes.",
+    "category": "Vulnerability Management",
+    "subcategory": "Enterprise Software",
+    "date": "2025-11-11",
+    "severity": "Critical",
+    "source": "SANS NewsBites",
+    "authors": ["SAP"],
+    "tags": ["SAP", "enterprise", "critical", "hardcoded-credentials"],
+    "references": [
+      {
+        "title": "SAP Security Notes",
+        "url": "support.sap.com"
+      },
+      {
+        "title": "Onapsis Analysis",
+        "url": "onapsis.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Thus far there has been no active exploitation of these flaws. Even so, get those updates moving."
+      },
+      {
+        "author": "Dukes",
+        "comment": "Another report on a company using hard-coded credentials in a product. It's a bad practice that must be avoided by software vendors."
+      }
+    ]
+  },
+  {
+    "id": "n6",
+    "headline": "KEV: Samsung, WatchGuard, Microsoft, and Gladinet Triofox",
+    "summary": "CISA adds four new CVEs to Known Exploited Vulnerabilities catalog including flaws in Samsung, WatchGuard, Microsoft, and Gladinet Triofox.",
+    "fullContent": "CISA added four CVEs to the KEV catalog this week: CVE-2025-60724 (Microsoft Graphics Component), CVE-2025-9242 (WatchGuard Fireware OS), CVE-2025-12480 (Gladinet Triofox), and CVE-2025-21042 (Samsung mobile devices). WatchGuard updated their original report to indicate active exploitation of their flaw. The vulnerabilities have mitigation due dates between December 1 and December 3 for FCEB agencies. CVE-2025-9242 has a CVSS score of 9.8 and affects approximately 54,000 Fireboxes, while CVE-2025-12480 has a CVSS score of 9.1.",
+    "impact": "Actively exploited vulnerabilities across multiple vendors requiring urgent patching.",
+    "category": "Vulnerability Management",
+    "subcategory": "Known Exploited",
+    "date": "2025-11-12",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["CISA"],
+    "tags": ["CISA", "KEV", "samsung", "watchguard", "microsoft", "triofox"],
+    "references": [
+      {
+        "title": "CISA KEV Catalog",
+        "url": "www.cisa.gov"
+      },
+      {
+        "title": "WatchGuard Advisory",
+        "url": "www.watchguard.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "With CVE-2025-9242 having a CVSS score of 9.8, you really don't want to miss this one."
+      }
+    ]
+  },
+  {
+    "id": "n7",
+    "headline": "Unsecure Digital Photo Frames Demonstrate Android Ecosystem Fragmentation",
+    "summary": "Research reveals serious security issues in Android-based digital picture frames running EOL Android 6 with flawed implementations enabling remote takeover.",
+    "fullContent": "Quokka researchers published a report detailing serious security issues in Android-based network-connected digital picture frames running the Uhale app, including Amazon's bestselling digital frame. The devices download and execute malware on boot with relaxed security controls allowing local or remote takeover. All studied devices run EOL Android 6 and had over 30,000 units sold recently. The security issues stem from flawed app implementations by OEMs rather than known Android 6 vulnerabilities. Quokka attempted responsible disclosure in May 2025 but received no response from parent company ZEASN. The report highlights systemic problems in budget device development and supply chain processes.",
+    "impact": "Widespread consumer IoT devices vulnerable to complete compromise and recruitment into botnets.",
+    "category": "IoT Security",
+    "subcategory": "Consumer Devices",
+    "date": "2025-11-13",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["Quokka"],
+    "tags": ["IoT", "android", "EOL", "consumer", "supply-chain"],
+    "references": [
+      {
+        "title": "Quokka Research PDF",
+        "url": "go.quokka.io"
+      },
+      {
+        "title": "BleepingComputer Coverage",
+        "url": "www.bleepingcomputer.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Be alert not only for IoT devices running old, unsupported OS versions, but also for insecure implementations sitting on a current OS."
+      },
+      {
+        "author": "Dukes",
+        "comment": "This report highlights concerns about patch management and security best practices being dismissed in rush to market."
+      },
+      {
+        "author": "Murray",
+        "comment": "Of course, these devices were never intended to be connected to a public network. We really need 'safe use' labelling."
+      }
+    ]
+  },
+  {
+    "id": "n8",
+    "headline": "Synnovis Concludes 2024 Ransomware Attack Investigation and Begins Notification Process",
+    "summary": "Synnovis completes forensic investigation of 2024 ransomware attack and begins notifying affected healthcare organizations after 17-month investigation.",
+    "fullContent": "Synnovis has completed its forensic investigation of the June 2024 ransomware attack that resulted in patient data theft. The company did not pay the ransom and has begun notifying affected healthcare organizations, expecting to conclude by November 21, 2025. Affected organizations will notify patients rather than Synnovis contacting them directly. No formal estimate of affected individuals has been provided. The attack disrupted patient care at NHS facilities and contributed to blood shortages, with King's College Hospital NHS Trust confirming the disruption contributed to a patient death. Within months of the attack, Synnovis built a new blood transfusion platform and completed cloud migration of core systems.",
+    "impact": "Massive healthcare data breach with patient care impacts and extremely delayed notifications.",
+    "category": "Incident Response",
+    "subcategory": "Healthcare",
+    "date": "2025-11-12",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["Synnovis"],
+    "tags": ["ransomware", "healthcare", "NHS", "data-breach", "forensics"],
+    "references": [
+      {
+        "title": "Synnovis Statement",
+        "url": "www.synnovis.co.uk"
+      },
+      {
+        "title": "HIPAA Journal Coverage",
+        "url": "www.hipaajournal.com"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "Seventeen months to conduct the needed data review and begin patient notification is excessively long."
+      },
+      {
+        "author": "Dukes",
+        "comment": "Eighteen months of investigation may be a new high mark to begin the process of notifying individuals."
+      },
+      {
+        "author": "Murray",
+        "comment": "Ransomware attacks against healthcare, infrastructure, and economic welfare constitute reckless disregard for life and limb."
+      }
+    ]
+  },
+  {
+    "id": "n9",
+    "headline": "Operation Endgame Takes Down Rhadamanthys, VenomRAT, and Elysium Infrastructure in International Effort",
+    "summary": "International law enforcement operation dismantles infrastructure supporting major malware families including Rhadamanthys, VenomRAT, and Elysium botnet.",
+    "fullContent": "Between November 10-13, law enforcement authorities dismantled infrastructure supporting Rhadamanthys infostealer, VenomRAT, and Elysium botnet in Operation Endgame coordinated by Europol and Eurojust. The operation involved authorities from 11 countries and over a dozen private organizations. Results include one arrest, 11 location searches, 20 domain seizures, and over 1,000 servers taken down or disrupted. The malware operations infected hundreds of thousands of computers and stole millions of account credentials including 2 million email addresses, 7.4 million passwords, and 100,000 crypto wallets. Participating countries include Australia, Belgium, Canada, Denmark, France, Germany, Greece, Lithuania, Netherlands, UK, and US.",
+    "impact": "Major disruption of cybercrime infrastructure affecting hundreds of thousands of victims worldwide.",
+    "category": "Threat Intelligence",
+    "subcategory": "Law Enforcement",
+    "date": "2025-11-13",
+    "severity": "High",
+    "source": "SANS NewsBites",
+    "authors": ["Europol", "Eurojust"],
+    "tags": ["law-enforcement", "malware", "botnet", "infostealer", "international"],
+    "references": [
+      {
+        "title": "Europol Press Release",
+        "url": "www.europol.europa.eu"
+      },
+      {
+        "title": "The Record Coverage",
+        "url": "therecord.media"
+      }
+    ],
+    "editorNotes": [
+      {
+        "author": "Neely",
+        "comment": "The data included about 2 million impacted email addresses. Not a bad time to check your status on haveibeenpwned.com."
+      },
+      {
+        "author": "Frost",
+        "comment": "The way I read this article is that all this infrastructure was either run by individuals still at large or by just one person."
+      },
+      {
+        "author": "Murray",
+        "comment": "It will be nice if this effort proves to be 'Endgame' rather than whack-a-mole."
+      }
+    ]
+  },
+   {
+    "id": "n1",
     "headline": "Microsoft's Nuance Agrees to Pay $8.5M to Settle MOVEit Breach Lawsuit",
     "summary": "Microsoft subsidiary Nuance settles class action lawsuit for $8.5M over MOVEit file transfer breach affecting 1.225 million people.",
     "fullContent": "Microsoft subsidiary Nuance has agreed to pay $8.5 million to settle a class action lawsuit over the MOVEit file transfer breach. The settlement admits no liability and awaits final approval hearing on March 31, 2026. The lawsuit was filed by customers claiming Nuance didn't adequately protect personal data compromised through the SQL injection vulnerability in Progress Software's MOVEit file transfer software. Nuance, acquired by Microsoft in 2022, is known for medical transcription and speech recognition systems and was one of many organizations breached through the MOVEit vulnerability.",
@@ -2557,6 +2876,7 @@ Welcome to the Universe of Hacking! 🛡️
     "id": "n2",
     "headline": "Support for Windows 10 Ends in October 2025",
     "summary": "Microsoft reminds users Windows 10 support ends October 14, 2025, with options including Extended Service Update program.",
+    
     "fullContent": "Microsoft reminds customers that Windows 10 support ends on October 14, 2025, giving users under two months to decide next steps. The October 2025 monthly security update will be the last available for Windows 10 versions. After this date, devices will no receive security updates. Microsoft urges upgrading to Windows 11 or cloud migration. For the first time, personal PCs can enroll in Extended Service Update (ESU) program for one additional year at nominal fee (waived with cloud backup or reward points). Office 2016 and Office 2019 support also ends October 24, 2025.",
     "impact": "Millions of devices will become vulnerable to new threats without security updates, requiring urgent migration planning.",
     "category": "End of Life",
